@@ -2795,6 +2795,11 @@ GameObject:
   - component: {fileID: 2119829934}
   - component: {fileID: 2119829935}
   - component: {fileID: 2119829936}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 2119829937}
+  - component: {fileID: 2119829938}
+>>>>>>> upstream/master
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3106,6 +3111,40 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+  m_GameObject: {fileID: 2119829929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fea88b6b0855145b71c2b640fd400b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: {fileID: 511655157}
+  storymanager: {fileID: 2119829935}
+  clipA: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
+  clipB: {fileID: 7400000, guid: 5421785afe1b8e742a74674363d27fdd, type: 2}
+  randomint: 0
+  steptoactivate: 2
+--- !u!114 &2119829938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119829929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1916acbeccb679942ae559a78f8f91c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: Is this safe
+  answer: 0
+  choices:
+  - 
+  - 
+--- !u!21 &2120768214
+Material:
+>>>>>>> upstream/master
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4656276061893175105}
