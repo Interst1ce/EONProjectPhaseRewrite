@@ -103,7 +103,11 @@ public class StoryManager : MonoBehaviour {
             GameObject.Find("PlayButton").SetActive(false);
         }
         if (!audioSource.isPlaying && introPlayed==true) {
-            steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
+            if (steps[currentStep].highlightThis != null)
+            {
+                steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
+            }
+
         }
         for (var i = 0; i < Input.touchCount; ++i) {
             if (Input.GetTouch(i).phase == TouchPhase.Began) {
@@ -123,7 +127,6 @@ public class StoryManager : MonoBehaviour {
                                 //play audio for the step
                                 PlayAudio(elem.audioClip);
                             }
-                            
                             if (elem.hasSlider) {
                                 if (!slider.activeSelf) {
                                     //activate slider and add an EventListener that calls CheckSlider(Step) everytime the slider value changes
