@@ -43,7 +43,7 @@ public class TextManager : MonoBehaviour {
 
     //array to hold references to scenes to be loaded, fill in order chapters 1-6
     [SerializeField]
-    public UnityEngine.Object[] chapterScenes;
+    public int[] chapterScenes;
 
     /*
      * MAKE SURE THAT IN THE INSPECTOR YOU SET THE SIZE OF THE TITLE, SUMMARY, SPRITE, AND SCENENUM ARRAYS TO BE THE EXACT SAME AND GREATER THAN 0
@@ -143,23 +143,23 @@ public class TextManager : MonoBehaviour {
                 Debug.Log(upperIndex + " load scene");
                 if (upperIndex != 2) {
                     //load scene from given index in array
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[3].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[3]);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[0].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[0]);
                 }
                 break;
             case 1:
                 if (upperIndex != 2) {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[4].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[4]);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[1].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[1]);
                 }
                 break;
             case 2:
                 if (upperIndex != 2) {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[5].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[5]);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[2].name);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[2]);
                 }
                 break;
         }
