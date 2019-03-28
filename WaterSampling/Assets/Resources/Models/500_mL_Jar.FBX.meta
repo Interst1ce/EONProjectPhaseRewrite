@@ -11,8 +11,8 @@ ModelImporter:
     400002: Bottle
     400004: Lid
     400006: Water_Shape
-    2100000: Jar
-    2100002: Lid
+    2100000: Bottle
+    2100002: Jar
     2300000: Bottle
     2300002: Lid
     2300004: Water_Shape
@@ -20,8 +20,8 @@ ModelImporter:
     3300002: Lid
     3300004: Water_Shape
     4300000: Bottle
-    4300002: Lid
-    4300004: Water_Shape
+    4300002: Water_Shape
+    4300004: Lid
   externalObjects: {}
   materials:
     importMaterials: 1
