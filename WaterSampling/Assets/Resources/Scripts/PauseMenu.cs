@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
 
-    Button prevButton;
-    Button nextButton;
-
     [SerializeField]
     GameObject[] toToggle;
 
