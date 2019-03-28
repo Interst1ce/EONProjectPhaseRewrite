@@ -1,27 +1,83 @@
 fileFormatVersion: 2
-guid: 9b6ae4b79af7d674ab2fefff95eb93d4
+guid: dd68b158180177f4bb8574e2298633b6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Bottle
-    100004: Lid
-    100006: Water_Shape
-    400000: //RootNode
-    400002: Bottle
-    400004: Lid
-    400006: Water_Shape
-    2100000: Bottle
-    2100002: Jar
-    2300000: Bottle
-    2300002: Lid
-    2300004: Water_Shape
-    3300000: Bottle
-    3300002: Lid
-    3300004: Water_Shape
-    4300000: Bottle
-    4300002: Water_Shape
-    4300004: Lid
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Bone012
+    100024: Bone013
+    100026: Bone014
+    100028: Bone015
+    100030: Bone016
+    100032: Bone017
+    100034: Bone018
+    100036: Bone019
+    100038: Bone020
+    100040: Bone021
+    100042: Bone022
+    100044: Bone023
+    100046: Bone024
+    100048: Bone025
+    100050: Bone026
+    100052: Bone027
+    100054: Bone028
+    100056: Bone029
+    100058: Bone030
+    100060: Bottom
+    100062: //RootNode
+    100064: Top
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Bone012
+    400024: Bone013
+    400026: Bone014
+    400028: Bone015
+    400030: Bone016
+    400032: Bone017
+    400034: Bone018
+    400036: Bone019
+    400038: Bone020
+    400040: Bone021
+    400042: Bone022
+    400044: Bone023
+    400046: Bone024
+    400048: Bone025
+    400050: Bone026
+    400052: Bone027
+    400054: Bone028
+    400056: Bone029
+    400058: Bone030
+    400060: Bottom
+    400062: //RootNode
+    400064: Top
+    2100000: Bottom
+    2100002: Top
+    2300000: Bottom
+    3300000: Bottom
+    4300000: Bottom
+    4300002: Top
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Top
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -74,8 +130,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -102,7 +158,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
