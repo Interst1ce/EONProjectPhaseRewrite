@@ -43,7 +43,7 @@ public class TextManager : MonoBehaviour {
 
     //array to hold references to scenes to be loaded, fill in order chapters 1-6
     [SerializeField]
-    public String[] chapterScenes;
+    public int[] chapterScenes;
 
     /*
      * MAKE SURE THAT IN THE INSPECTOR YOU SET THE SIZE OF THE TITLE, SUMMARY, SPRITE, AND SCENENUM ARRAYS TO BE THE EXACT SAME AND GREATER THAN 0

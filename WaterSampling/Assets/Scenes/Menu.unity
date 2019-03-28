@@ -355,7 +355,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!114 &324404467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +776,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!1 &681805035
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +924,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!1 &769689103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!222 &855986499
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1714,7 +1714,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!1 &916687658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,7 +2366,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!114 &1318029007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2598,7 +2598,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!222 &1409647020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3394,7 +3394,7 @@ MonoBehaviour:
   chapterTitles: []
   chapterSummaries: []
   chapterSprites: []
-  chapterScenes: []
+  chapterScenes: 
 --- !u!1 &1755059021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,11 +4180,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
   - {fileID: 21300000, guid: 5c2de3328c945da49ab420ff012b5f93, type: 3}
   - {fileID: 21300000, guid: 5c2de3328c945da49ab420ff012b5f93, type: 3}
-  chapterScenes:
-  - Collection
-  - Analysis
-  - Collection Review
-  - Analysis Review
+  chapterScenes: 04000000030000000500000006000000
 --- !u!222 &1991014895
 CanvasRenderer:
   m_ObjectHideFlags: 0
