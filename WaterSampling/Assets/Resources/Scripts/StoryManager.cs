@@ -102,7 +102,7 @@ public class StoryManager : MonoBehaviour {
             GameObject.Find("EventSystem").GetComponent<PauseMenu>().Pause();
             GameObject.Find("PlayButton").SetActive(false);
         }
-        if (!audioSource.isPlaying && introPlayed==true) {
+        if (!audioSource.isPlaying && introPlayed) {
             if(steps[currentStep].highlightThis != null) {
                 steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
             }
