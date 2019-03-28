@@ -151,6 +151,12 @@ public class StoryManager : MonoBehaviour {
                 }
             }
         }
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false) {
+            finished = true;
+            //PlayAudio(outroAudio);
+            GameObject.Find("EventSystem").GetComponent<PauseMenu>().Pause();
+            GameObject.Find("PlayButton").SetActive(false);
+        }
     }
 
     public void Question() {
