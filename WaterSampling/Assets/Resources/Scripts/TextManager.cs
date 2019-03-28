@@ -41,9 +41,9 @@ public class TextManager : MonoBehaviour {
     [SerializeField]
     public Sprite[] chapterSprites;
 
-    //array to hold scene build order numbers, fill in order chapters 1-6
+    //array to hold references to scenes to be loaded, fill in order chapters 1-6
     [SerializeField]
-    public int[] chapterSceneNums;
+    public UnityEngine.Object[] chapterScenes;
 
     /*
      * MAKE SURE THAT IN THE INSPECTOR YOU SET THE SIZE OF THE TITLE, SUMMARY, SPRITE, AND SCENENUM ARRAYS TO BE THE EXACT SAME AND GREATER THAN 0
@@ -75,7 +75,7 @@ public class TextManager : MonoBehaviour {
         eventManager.GetComponent<TextManager>().chapterTitles = chapterTitles;
         eventManager.GetComponent<TextManager>().chapterSummaries = chapterSummaries;
         eventManager.GetComponent<TextManager>().chapterSprites = chapterSprites;
-        eventManager.GetComponent<TextManager>().chapterSceneNums = chapterSceneNums;
+        eventManager.GetComponent<TextManager>().chapterScenes = chapterScenes;
 
 
         //determines if the back/next chapters buttons are interactable
@@ -143,23 +143,23 @@ public class TextManager : MonoBehaviour {
                 Debug.Log(upperIndex + " load scene");
                 if (upperIndex != 2) {
                     //load scene from given index in array
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[3]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[3].name);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[0]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[0].name);
                 }
                 break;
             case 1:
                 if (upperIndex != 2) {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[4]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[4].name);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[1]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[1].name);
                 }
                 break;
             case 2:
                 if (upperIndex != 2) {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[5]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[5].name);
                 } else {
-                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterSceneNums[2]);
+                    SceneManager.LoadScene(eventManager.GetComponent<TextManager>().chapterScenes[2].name);
                 }
                 break;
         }
