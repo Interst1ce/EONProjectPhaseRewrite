@@ -95,17 +95,18 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished==false)
-        {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false) {
             finished = true;
             //PlayAudio(outroAudio);
-            GameObject.Find("EventSystem").GetComponent<PauseMenu>().Pause();
+            GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
             GameObject.Find("PlayButton").SetActive(false);
         }
         if (!audioSource.isPlaying && introPlayed) {
-            if(steps[currentStep].highlightThis != null) {
-                steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
-            }
+            if(currentStep <= steps.Length - 1) {
+                if (steps[currentStep].highlightThis != null) {
+                    steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
+                }
+            }   
         }
         for (var i = 0; i < Input.touchCount; ++i) {
             if (Input.GetTouch(i).phase == TouchPhase.Began) {
@@ -135,13 +136,16 @@ public class StoryManager : MonoBehaviour {
                                 slider.SetActive(false);
                             }
                             if (elem.hasQuestion) {
+                                Debug.Log("fuck");
                                 //send necessary data to the QuestionManager and call Question()
                                 qAPanel.GetComponent<QuestionManager>().question = elem.question;
                                 qAPanel.GetComponent<QuestionManager>().choices = elem.choices;
                                 qAPanel.GetComponent<QuestionManager>().answer = elem.correctChoice;
                                 if (elem.audioClip != null) {
+                                    Debug.Log("Invoke yeet");
                                     Invoke("Question",elem.audioClip.length);
                                 }
+                                Debug.Log("Call intermediary yeet");
                                 Question();
                             }
                         } else if (hit.transform.gameObject != elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
@@ -151,15 +155,10 @@ public class StoryManager : MonoBehaviour {
                 }
             }
         }
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false) {
-            finished = true;
-            //PlayAudio(outroAudio);
-            GameObject.Find("EventSystem").GetComponent<PauseMenu>().Pause();
-            GameObject.Find("PlayButton").SetActive(false);
-        }
     }
 
     public void Question() {
+        Debug.Log("Call the actual yeet");
         qAPanel.GetComponent<QuestionManager>().Question();
     }
 

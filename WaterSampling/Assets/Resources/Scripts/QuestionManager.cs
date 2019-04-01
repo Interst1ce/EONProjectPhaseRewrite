@@ -24,7 +24,7 @@ public class QuestionManager : MonoBehaviour
     }
 
     private void Start() {
-        
+        qAPanel.SetActive(false);
     }
 
     public void Question() {
@@ -32,10 +32,15 @@ public class QuestionManager : MonoBehaviour
     }
 
     //FadeUI coroutine
-    IEnumerator FadeUI(float targetTime, bool fadeIn) {
+    IEnumerator FadeUI(float targetTime, bool fadeIn = false) {
+        if (!qAPanel.activeSelf) {
+            qAPanel.SetActive(true);
+        }
+
         textToBeFaded.Add(questionPanel.GetComponentInChildren<TextMeshProUGUI>());
         imageToBeFaded.Add(qAPanel.GetComponent<Image>());
         imageToBeFaded.Add(questionPanel.GetComponent<Image>());
+
 
         //depending on the length of choices[] add button children from AnswerLayout2/3/4 to toBeFadedIn[]
         switch (choices.Length) {
@@ -94,9 +99,14 @@ public class QuestionManager : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        if (qAPanel.activeSelf) {
+            qAPanel.SetActive(false);
+        }
     }
     //call from OnClick event from AnswerButtons
-    public void CheckAnswer() {
-
+    public void CheckAnswer(int choice) {
+        if(choice == answer) {
+            StartCoroutine(FadeUI(1));
+        }
     }
 }
