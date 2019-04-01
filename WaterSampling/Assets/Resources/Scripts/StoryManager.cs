@@ -95,7 +95,7 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false) {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf) {
             finished = true;
             //PlayAudio(outroAudio);
             GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
@@ -115,7 +115,7 @@ public class StoryManager : MonoBehaviour {
                 if (Physics.Raycast(ray,out hit)) {
                     //GameObject.Find("TextMeshPro Text").GetComponent<TextMeshProUGUI>().text = hit.transform.gameObject.name;
                     foreach (Step elem in steps) {
-                        if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && (!audioSource.isPlaying && !audioSource.loop)) {
+                        if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
                             currentStep++;
                             if (elem.animClip != null) {
                                 //play the animation for the step
@@ -131,21 +131,18 @@ public class StoryManager : MonoBehaviour {
                                     //activate slider and add an EventListener that calls CheckSlider(Step) everytime the slider value changes
                                     slider.SetActive(true);
                                     slider.GetComponent<Slider>().onValueChanged.AddListener(delegate { CheckSlider(elem); });
+                                } else {
+                                    slider.SetActive(false);
                                 }
-                            } else {
-                                slider.SetActive(false);
-                            }
+                            } 
                             if (elem.hasQuestion) {
-                                Debug.Log("fuck");
                                 //send necessary data to the QuestionManager and call Question()
                                 qAPanel.GetComponent<QuestionManager>().question = elem.question;
                                 qAPanel.GetComponent<QuestionManager>().choices = elem.choices;
                                 qAPanel.GetComponent<QuestionManager>().answer = elem.correctChoice;
                                 if (elem.audioClip != null) {
-                                    Debug.Log("Invoke yeet");
                                     Invoke("Question",elem.audioClip.length);
                                 }
-                                Debug.Log("Call intermediary yeet");
                                 Question();
                             }
                         } else if (hit.transform.gameObject != elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
@@ -158,7 +155,6 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Question() {
-        Debug.Log("Call the actual yeet");
         qAPanel.GetComponent<QuestionManager>().Question();
     }
 

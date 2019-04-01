@@ -28,15 +28,12 @@ public class QuestionManager : MonoBehaviour
     }
 
     public void Question() {
+        qAPanel.SetActive(true);
         StartCoroutine(FadeUI(1,true));
     }
 
     //FadeUI coroutine
     IEnumerator FadeUI(float targetTime, bool fadeIn = false) {
-        if (!qAPanel.activeSelf) {
-            qAPanel.SetActive(true);
-        }
-
         textToBeFaded.Add(questionPanel.GetComponentInChildren<TextMeshProUGUI>());
         imageToBeFaded.Add(qAPanel.GetComponent<Image>());
         imageToBeFaded.Add(questionPanel.GetComponent<Image>());
@@ -70,6 +67,12 @@ public class QuestionManager : MonoBehaviour
         float elapsedTime = 0;
 
         //update text boxes
+        if (fadeIn) {
+            textToBeFaded[0].text = question;
+            for (int i = 1; i < textToBeFaded.Count; i++) {
+                textToBeFaded[i].text = choices[i - 1];
+            }
+        }
 
         while(elapsedTime < targetTime) {
             if (fadeIn){
@@ -99,14 +102,16 @@ public class QuestionManager : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        if (qAPanel.activeSelf) {
-            qAPanel.SetActive(false);
-        }
     }
     //call from OnClick event from AnswerButtons
     public void CheckAnswer(int choice) {
         if(choice == answer) {
             StartCoroutine(FadeUI(1));
+            Invoke("DisableUI",1);
         }
+    }
+
+    public void DisableUI() {
+        qAPanel.SetActive(true);
     }
 }
