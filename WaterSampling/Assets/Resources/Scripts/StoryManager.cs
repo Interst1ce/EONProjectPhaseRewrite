@@ -95,7 +95,14 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (!audioSource.isPlaying && introPlayed==true) {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished==false)
+        {
+            finished = true;
+            //PlayAudio(outroAudio);
+            GameObject.Find("EventSystem").GetComponent<PauseMenu>().Pause();
+            GameObject.Find("PlayButton").SetActive(false);
+        }
+        if (!audioSource.isPlaying && introPlayed) {
             if(steps[currentStep].highlightThis != null) {
                 steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
             }
