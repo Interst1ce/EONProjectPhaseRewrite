@@ -119,6 +119,11 @@ public class StoryManager : MonoBehaviour {
                     foreach (Step elem in steps) {
                         if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
                             currentStep++;
+                            AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
+                            foreach (AudioSource source in audioSources) {
+                                Destroy(source);
+                            }
+                            audioSource = new AudioSource();
                             if (elem.animClip != null) {
                                 //play the animation for the step
                                 //maybe update for next sprint multiple animations to play in sequence
@@ -168,12 +173,26 @@ public class StoryManager : MonoBehaviour {
         audioSource.Play();
     }
 
-    public void PlaySoundEffects(AudioClip[] clips) {
+    public void PlaySoundEffects(AudioClip[] clips, float delay = 0) {
         foreach(AudioClip clip in clips) {
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = clip;
-            audioSource.Play();
+            if(delay == 0) {
+                audioSource.Play();
+            } else {
+                StartCoroutine(DelaySoundEffect(audioSource, delay));
+            }
         }
+    }
+
+    IEnumerator DelaySoundEffect(AudioSource source, float delay) {
+        float elapsedTime = 0;
+
+        while(elapsedTime < delay) {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        source.Play();
     }
 
     public void PlayIntro() {
