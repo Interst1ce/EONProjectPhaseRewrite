@@ -53,6 +53,7 @@
 			float _Cutoff;
 			float _Speed;
 			float _AlphaMult;
+			float4 _Color;
 
             float4 frag (v2f i) : SV_Target
             {
@@ -67,7 +68,7 @@
 				color.a = step(0.0, i.uv.y - _Cutoff);
 
 				color.a *= ((color.r + color.g + color.b) / 3) * (_AlphaMult * 3);
-
+				color *= _Color;
                 return color;
             }
             ENDCG
