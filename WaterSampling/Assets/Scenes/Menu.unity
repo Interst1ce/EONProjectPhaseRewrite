@@ -2596,15 +2596,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chapterTitles:
-  - 
-  - 
+  - Grab Sampling Tutorial
+  - Composite Sampling Tutorial
   chapterSummaries:
-  - 
-  - 
+  - Learn the basics of Grab Sampling
+  - Learn the basics of Composite Sampling
   chapterSprites:
   - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
-  - {fileID: 21300000, guid: 909e6cb4da60e8b4b95527909881b711, type: 3}
-  chapterScenes: 0000000000000000
+  - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
+  chapterScenes: 0600000007000000
 --- !u!222 &1409647020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4186,7 +4186,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b4a1e3d5c7542c24989d61b7f65d9855, type: 3}
   - {fileID: 21300000, guid: 909e6cb4da60e8b4b95527909881b711, type: 3}
   - {fileID: 21300000, guid: 909e6cb4da60e8b4b95527909881b711, type: 3}
-  chapterScenes: 04000000030000000500000006000000
+  chapterScenes: 03000000040000000500000006000000
 --- !u!222 &1991014895
 CanvasRenderer:
   m_ObjectHideFlags: 0
