@@ -1013,10 +1013,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1935470155}
-  - {fileID: 2123634696}
   - {fileID: 5247186827343934250}
-  - {fileID: 1578373129}
   - {fileID: 9010644316913085344}
+  - {fileID: 2123634696}
+  - {fileID: 1578373129}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1203,11 +1203,7 @@ MonoBehaviour:
   steps:
   - objectTarget: {fileID: 9010644316912662406}
     narateAudio: {fileID: 0}
-    soundEffects:
-    - soundEffect: {fileID: 0}
-      delay: 0
-    - soundEffect: {fileID: 0}
-      delay: 0
+    soundEffects: []
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 83eaed2a50556de49903cfa03a073029, type: 2}
     stepOrder: 0
@@ -1815,7 +1811,7 @@ Transform:
   - {fileID: 5247186827343934248}
   - {fileID: 5247186827343934254}
   m_Father: {fileID: 1860176668}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5247186827343934252
 Transform:
@@ -3465,7 +3461,7 @@ Transform:
   - {fileID: 9010644316913085350}
   - {fileID: 7212921644170019866}
   m_Father: {fileID: 1860176668}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -205.728, z: 0}
 --- !u!4 &9010644316913085346
 Transform:
