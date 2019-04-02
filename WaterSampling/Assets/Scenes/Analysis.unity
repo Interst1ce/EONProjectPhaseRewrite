@@ -2367,7 +2367,7 @@ MonoBehaviour:
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
     stepOrder: 4
-    highlightThis: {fileID: 7400000, guid: 3798f15e899de514cb664b5096d77988, type: 2}
+    highlightThis: {fileID: 7400000, guid: dba160ef33a65774b97032e43622f970, type: 2}
     highlightTarget: {fileID: 4197247634080686774}
     tapOrDrag: 0
     hasSlider: 0
@@ -2918,7 +2918,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100004, guid: 27b2cd4c8ef947a47b0f7bd77bc409ab, type: 3}
+  - {fileID: 2100000, guid: 5711a9d1a321cea458438721f09f2d27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3073,7 +3073,7 @@ Animator:
   m_GameObject: {fileID: 4197247634080686768}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8fe7fc9ab7330be48b1a8616560b160d, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

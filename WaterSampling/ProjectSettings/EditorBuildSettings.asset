@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Collection.unity
     guid: 6edc27dff5c011f47b27afdeaa81c472
   - enabled: 1
-    path: Assets/Scenes/Collection Review.unity
-    guid: 751f84fcf18e6fd48882be7a944c4188
-  - enabled: 1
     path: Assets/Scenes/Analysis Review.unity
     guid: d71a97e54a8f0d140b53c0404b432408
+  - enabled: 1
+    path: Assets/Scenes/Collection Review.unity
+    guid: 751f84fcf18e6fd48882be7a944c4188
   - enabled: 1
     path: Assets/Scenes/Grab.unity
     guid: ace37e6426d570f4b907d6dd2cf86dc4
@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SliderTesting.unity
     guid: d1d18d907f96bd242a5c18a2892878ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VuforiaTemplate.unity
     guid: ab64ab0dd423d3d419475d0b1d9bd445
   m_configObjects: {}

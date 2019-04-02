@@ -2846,7 +2846,7 @@ MonoBehaviour:
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 4b36eba7399e2ff4aab8dcc4fe384fb8, type: 2}
     stepOrder: 3
-    highlightThis: {fileID: 7400000, guid: 9cf5d9734635afb48916eaf054782355, type: 2}
+    highlightThis: {fileID: 7400000, guid: f5984c9ee6ae28849a83f3e2bfbe1962, type: 2}
     highlightTarget: {fileID: 1652766366}
     tapOrDrag: 0
     hasSlider: 0
@@ -3114,6 +3114,7 @@ MonoBehaviour:
   storyManager: {fileID: 0}
   water: {fileID: 0}
   parent: {fileID: 0}
+  jarUnder: 0
 --- !u!33 &6701089970775618169
 MeshFilter:
   m_ObjectHideFlags: 0

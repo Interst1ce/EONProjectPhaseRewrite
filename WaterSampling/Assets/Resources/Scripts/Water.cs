@@ -9,6 +9,8 @@ public class Water : MonoBehaviour
     public GameObject water;
     public GameObject parent;
 
+    public bool jarUnder;
+
     private void Awake() {
         storyManager = this.gameObject;
         water = GameObject.Find("waterv1");
@@ -38,10 +40,12 @@ public class Water : MonoBehaviour
                     StartCoroutine(Lerp(0,100,1));
                     break;
                 case 8:
-                    StartCoroutine(AdjustWater(0.35f));
+                    jarUnder = true;
+                    Invoke("AdjustWater",0.35f);
                     break;
-                case 10:
-                    StartCoroutine(AdjustWater(0.15f,false));
+                case 9:
+                    jarUnder = false;
+                    Invoke("AdjustWater", 0.15f);
                     break;
                 case 11:
                     water.SetActive(false);
@@ -58,10 +62,12 @@ public class Water : MonoBehaviour
                     StartCoroutine(Lerp(0,100,1));
                     break;
                 case 6:
-                    StartCoroutine(AdjustWater(0.35f));
+                    jarUnder = true;
+                    Invoke("AdjustWater", 0.45f);
                     break;
                 case 7:
-                    StartCoroutine(AdjustWater(0.15f,false));
+                    jarUnder = false;
+                    Invoke("AdjustWater", 0.15f);
                     break;
                 case 9:
                     water.SetActive(false);
@@ -79,23 +85,13 @@ public class Water : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator AdjustWater(float time,bool jarUnder = true) {
-        float elapsedTime = 0;
-        while(elapsedTime < 1) {
-            elapsedTime += Time.deltaTime;
-            while (elapsedTime > time) {
-                if (jarUnder) {
-                    water.transform.position = new Vector3(-0.251f,0.487f,0.129f);
-                    water.transform.localScale = new Vector3(16.40755f,16.40755f,31f);
-                    StopCoroutine("AdjustWater");
-                } else {
-                    water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
-                    water.transform.localScale = new Vector3(16.40755f,16.40756f,57.42658f);
-                    StopCoroutine("AdjustWater");
-                }
-                yield return null;
-            }
-            yield return null;
+    public void AdjustWater() {
+        if (jarUnder) {
+            water.transform.position = new Vector3(-0.251f,0.487f,0.129f);
+            water.transform.localScale = new Vector3(16.40755f,16.40755f,31f);
+        } else {
+            water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
+            water.transform.localScale = new Vector3(16.40755f, 16.40756f, 57.42658f);
         }
     }
 }

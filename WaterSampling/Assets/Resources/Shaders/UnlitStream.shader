@@ -6,6 +6,7 @@
 		_Cutoff("Alpha Cutoff", Range(0.0, 1.0)) = 8
 		_Speed("Speed", Float) = 8
 		_AlphaMult("Alpha Multiplier", Range(0.0, 1.0)) = 1
+		_Color ("Main Color", COLOR)=(1,1,1,1)
     }
     SubShader
     {
