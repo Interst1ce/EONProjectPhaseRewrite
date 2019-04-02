@@ -49,7 +49,7 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public AudioClip narateAudio;
         [SerializeField]
-        public AudioClip[] soundEffects;
+        public SoundEffect[] soundEffects;
         [SerializeField]
         public AudioClip missTap;
         [SerializeField]
@@ -83,6 +83,14 @@ public class StoryManager : MonoBehaviour {
         public String[] choices;
         [SerializeField]
         public int correctChoice;
+    }
+
+    [System.Serializable]
+    public class SoundEffect : object {
+        [SerializeField]
+        public AudioClip soundEffect;
+        [SerializeField]
+        public float delay;
     }
 
     public void Awake() {
@@ -173,14 +181,14 @@ public class StoryManager : MonoBehaviour {
         audioSource.Play();
     }
 
-    public void PlaySoundEffects(AudioClip[] clips, float delay = 0) {
-        foreach(AudioClip clip in clips) {
+    public void PlaySoundEffects(SoundEffect[] effects) {
+        foreach(SoundEffect effect in effects) {
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.clip = clip;
-            if(delay == 0) {
+            audioSource.clip = effect.soundEffect;
+            if(effect.delay == 0) {
                 audioSource.Play();
             } else {
-                StartCoroutine(DelaySoundEffect(audioSource, delay));
+                StartCoroutine(DelaySoundEffect(audioSource, effect.delay));
             }
         }
     }
