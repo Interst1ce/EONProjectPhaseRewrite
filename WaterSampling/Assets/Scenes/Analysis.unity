@@ -1485,7 +1485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.3192254, z: 1}
   m_Children: []
   m_Father: {fileID: 1652731942}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652731935
 Transform:
@@ -1499,7 +1499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 2.1783063}
   m_Children: []
   m_Father: {fileID: 1652731942}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652731936
 Transform:
@@ -1508,12 +1508,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652731949}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.47822475, y: 0, z: 18.243135}
-  m_LocalScale: {x: 1, y: 1.3192254, z: 1}
+  m_LocalRotation: {x: 0.00000008940697, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.012397573, y: 0.34072906, z: 0.00049363216}
+  m_LocalScale: {x: 0.024593001, y: 0.024593001, z: 0.024593003}
   m_Children: []
-  m_Father: {fileID: 1652731942}
-  m_RootOrder: 3
+  m_Father: {fileID: 1652731945}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652731937
 Transform:
@@ -1527,7 +1527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.3192254, z: 1.9786526}
   m_Children: []
   m_Father: {fileID: 1652731942}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652731938
 Transform:
@@ -1600,12 +1600,11 @@ Transform:
   - {fileID: 1652731943}
   - {fileID: 1652731938}
   - {fileID: 1652731939}
-  - {fileID: 1652731936}
   - {fileID: 1652731937}
   - {fileID: 1652731934}
   - {fileID: 1652731935}
   m_Father: {fileID: 1652731945}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652731943
 Transform:
@@ -1651,6 +1650,7 @@ Transform:
   m_LocalPosition: {x: 0.62584, y: 0.30623698, z: 0.21915}
   m_LocalScale: {x: 1.11845, y: 1.11845, z: 1.11845}
   m_Children:
+  - {fileID: 1652731936}
   - {fileID: 1652731942}
   m_Father: {fileID: 1860176668}
   m_RootOrder: 1
@@ -2290,7 +2290,7 @@ MonoBehaviour:
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: f95e2e48a5d4d214b8bfdb286c276deb, type: 2}
     stepOrder: 0
-    highlightThis: {fileID: 7400000, guid: ea74d62f89d39b24eafb98d237c2e4bf, type: 2}
+    highlightThis: {fileID: 7400000, guid: 9cf5d9734635afb48916eaf054782355, type: 2}
     highlightTarget: {fileID: 1652731954}
     tapOrDrag: 0
     hasSlider: 0
