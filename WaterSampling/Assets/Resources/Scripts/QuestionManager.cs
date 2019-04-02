@@ -112,6 +112,6 @@ public class QuestionManager : MonoBehaviour
     }
 
     public void DisableUI() {
-        qAPanel.SetActive(true);
+        qAPanel.SetActive(false);
     }
 }
