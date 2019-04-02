@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class RandomizedAnimation : MonoBehaviour
 {
+    [SerializeField]
     public GameObject Object;
+    [SerializeField]
     public StoryManager storymanager;
+    [SerializeField]
     public AnimationClip clipA;
+    [SerializeField]
     public AnimationClip clipB;
-
-    public int randomint;
+    [SerializeField]
     public int steptoactivate;
+    int randomint;
     private bool isrunning = false;
 
     
@@ -25,10 +29,12 @@ public class RandomizedAnimation : MonoBehaviour
             if (randomint == 3)
             {
                 Object.GetComponent<Animator>().Play(clipA.name);
+                storymanager.steps[storymanager.currentStep].correctChoice = 0;
             }
             if (randomint < 3)
             {
                 Object.GetComponent<Animator>().Play(clipB.name);
+                storymanager.steps[storymanager.currentStep].correctChoice = 1;
             }
 
 

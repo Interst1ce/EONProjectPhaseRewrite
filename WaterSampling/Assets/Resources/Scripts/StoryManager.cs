@@ -105,7 +105,7 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && (!qAPanel.activeSelf || qAPanel == null)) {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf) {
             finished = true;
             //PlayAudio(outroAudio);
             GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
@@ -128,10 +128,9 @@ public class StoryManager : MonoBehaviour {
                         if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
                             currentStep++;
                             AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
-                            foreach (AudioSource source in audioSources) {
-                                Destroy(source);
+                            for(int j = 1; j < audioSources.Length; j++) {
+                                Destroy(audioSources[j]);
                             }
-                            audioSource = new AudioSource();
                             if (elem.animClip != null) {
                                 //play the animation for the step
                                 //maybe update for next sprint multiple animations to play in sequence
