@@ -515,6 +515,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1543066975}
     m_Modifications:
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_Name
