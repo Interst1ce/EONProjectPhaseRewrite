@@ -49,7 +49,7 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public AudioClip narateAudio;
         [SerializeField]
-        public AudioClip[] soundEffects;
+        public SoundEffect[] soundEffects;
         [SerializeField]
         public AudioClip missTap;
         [SerializeField]
@@ -83,6 +83,14 @@ public class StoryManager : MonoBehaviour {
         public String[] choices;
         [SerializeField]
         public int correctChoice;
+    }
+
+    [System.Serializable]
+    public class SoundEffect : object {
+        [SerializeField]
+        public AudioClip soundEffect;
+        [SerializeField]
+        public float delay;
     }
 
     public void Awake() {
@@ -119,6 +127,11 @@ public class StoryManager : MonoBehaviour {
                     foreach (Step elem in steps) {
                         if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
                             currentStep++;
+                            AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
+                            foreach (AudioSource source in audioSources) {
+                                Destroy(source);
+                            }
+                            audioSource = new AudioSource();
                             if (elem.animClip != null) {
                                 //play the animation for the step
                                 //maybe update for next sprint multiple animations to play in sequence
@@ -168,12 +181,26 @@ public class StoryManager : MonoBehaviour {
         audioSource.Play();
     }
 
-    public void PlaySoundEffects(AudioClip[] clips) {
-        foreach(AudioClip clip in clips) {
+    public void PlaySoundEffects(SoundEffect[] effects) {
+        foreach(SoundEffect effect in effects) {
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.clip = clip;
-            audioSource.Play();
+            audioSource.clip = effect.soundEffect;
+            if(effect.delay == 0) {
+                audioSource.Play();
+            } else {
+                StartCoroutine(DelaySoundEffect(audioSource, effect.delay));
+            }
         }
+    }
+
+    IEnumerator DelaySoundEffect(AudioSource source, float delay) {
+        float elapsedTime = 0;
+
+        while(elapsedTime < delay) {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        source.Play();
     }
 
     public void PlayIntro() {
