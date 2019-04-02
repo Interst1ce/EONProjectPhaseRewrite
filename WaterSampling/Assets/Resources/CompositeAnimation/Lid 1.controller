@@ -6,13 +6,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lid
+  m_Name: Lid 1
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 1107834816692815212}
+    m_StateMachine: {fileID: 1107450396510516380}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -22,7 +22,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &1102055822802224046
+--- !u!1102 &1102022363708530392
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -48,7 +48,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102740317140331402
+--- !u!1102 &1102198768537985876
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -68,13 +68,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 83eaed2a50556de49903cfa03a073029, type: 2}
+  m_Motion: {fileID: 7400000, guid: f0025eec28470ec4293b765a2f3e306b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102758093658894220
+--- !u!1102 &1102289328746749538
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -94,13 +94,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4d17b65e725b22b45a84ae75edb9467c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6c29e47e4ff25af448183f3c94f8d4a4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1107 &1107834816692815212
+--- !u!1107 &1107450396510516380
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -110,17 +110,14 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1102670386138854376}
-    m_Position: {x: 372, y: 84, z: 0}
+    m_State: {fileID: 1102022363708530392}
+    m_Position: {x: 286.06067, y: 192.23483, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102055822802224046}
-    m_Position: {x: 123.44739, y: 243.70088, z: 0}
+    m_State: {fileID: 1102198768537985876}
+    m_Position: {x: 507.72736, y: 131.83713, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102740317140331402}
-    m_Position: {x: 515.9696, y: 124.94295, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102758093658894220}
-    m_Position: {x: 639.9873, y: 228.49174, z: 0}
+    m_State: {fileID: 1102289328746749538}
+    m_Position: {x: 542.72736, y: 196.83713, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -130,4 +127,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102055822802224046}
+  m_DefaultState: {fileID: 1102022363708530392}
