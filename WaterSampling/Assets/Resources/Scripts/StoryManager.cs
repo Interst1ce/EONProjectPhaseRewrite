@@ -47,7 +47,9 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public GameObject objectTarget;
         [SerializeField]
-        public AudioClip audioClip;
+        public AudioClip narateAudio;
+        [SerializeField]
+        public AudioClip[] soundEffects;
         [SerializeField]
         public AudioClip missTap;
         [SerializeField]
@@ -95,7 +97,7 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf) {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && (!qAPanel.activeSelf || qAPanel == null)) {
             finished = true;
             //PlayAudio(outroAudio);
             GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
@@ -122,9 +124,12 @@ public class StoryManager : MonoBehaviour {
                                 //maybe update for next sprint multiple animations to play in sequence
                                 hit.transform.gameObject.GetComponent<Animator>().Play(elem.animClip.name);
                             }
-                            if (elem.audioClip != null) {
+                            if (elem.narateAudio != null) {
                                 //play audio for the step
-                                PlayAudio(elem.audioClip);
+                                PlayAudio(elem.narateAudio);
+                            }
+                            if (elem.soundEffects != null) {
+                                PlaySoundEffects(elem.soundEffects);
                             }
                             if (elem.hasSlider) {
                                 if (!slider.activeSelf) {
@@ -140,8 +145,8 @@ public class StoryManager : MonoBehaviour {
                                 qAPanel.GetComponent<QuestionManager>().question = elem.question;
                                 qAPanel.GetComponent<QuestionManager>().choices = elem.choices;
                                 qAPanel.GetComponent<QuestionManager>().answer = elem.correctChoice;
-                                if (elem.audioClip != null) {
-                                    Invoke("Question",elem.audioClip.length);
+                                if (elem.narateAudio != null) {
+                                    Invoke("Question",elem.narateAudio.length);
                                 }
                                 Question();
                             }
@@ -161,6 +166,14 @@ public class StoryManager : MonoBehaviour {
     public void PlayAudio(AudioClip audio) {
         audioSource.clip = audio;
         audioSource.Play();
+    }
+
+    public void PlaySoundEffects(AudioClip[] clips) {
+        foreach(AudioClip clip in clips) {
+            AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
     }
 
     public void PlayIntro() {
