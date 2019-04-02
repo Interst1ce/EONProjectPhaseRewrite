@@ -38,10 +38,10 @@ public class Water : MonoBehaviour
                     StartCoroutine(Lerp(0,100,1));
                     break;
                 case 8:
-                    StartCoroutine(AdjustWater(0.35f,8));
+                    StartCoroutine(AdjustWater(0.35f));
                     break;
                 case 10:
-                    StartCoroutine(AdjustWater(0.15f,10));
+                    StartCoroutine(AdjustWater(0.15f,false));
                     break;
                 case 11:
                     water.SetActive(false);
@@ -88,7 +88,7 @@ public class Water : MonoBehaviour
                     water.transform.position = new Vector3(-0.251f,0.487f,0.129f);
                     water.transform.localScale = new Vector3(16.40755f,16.40755f,31f);
                     StopCoroutine("AdjustWater");
-                } else if (!jarUnder) {
+                } else {
                     water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
                     water.transform.localScale = new Vector3(16.40755f,16.40756f,57.42658f);
                     StopCoroutine("AdjustWater");
@@ -96,6 +96,6 @@ public class Water : MonoBehaviour
                 yield return null;
             }
             yield return null;
-        } 
+        }
     }
 }
