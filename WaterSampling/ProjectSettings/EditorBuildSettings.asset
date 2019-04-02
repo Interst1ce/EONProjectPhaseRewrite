@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SliderTesting.unity
     guid: d1d18d907f96bd242a5c18a2892878ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VuforiaTemplate.unity
     guid: ab64ab0dd423d3d419475d0b1d9bd445
   m_configObjects: {}
