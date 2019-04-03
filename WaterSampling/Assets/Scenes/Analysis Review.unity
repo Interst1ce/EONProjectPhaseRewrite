@@ -520,16 +520,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_Name
@@ -589,6 +579,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2661953587329213317, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -2572,7 +2572,15 @@ MonoBehaviour:
   steps:
   - objectTarget: {fileID: 1652731954}
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 1.6
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 2
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 2.9
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 3.3
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: f95e2e48a5d4d214b8bfdb286c276deb, type: 2}
     stepOrder: 0
@@ -2591,7 +2599,9 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 517210782}
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
+      delay: 0
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 6b9ec3e492b8e8d45b5841435946b2ed, type: 2}
     stepOrder: 1
@@ -2610,7 +2620,11 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 123484976}
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 81fd6ef21b33d5a40a31dd1597caefb4, type: 3}
+      delay: 1.5
+    - soundEffect: {fileID: 8300000, guid: 678a8daaa0339cf4086dbf951e79a22f, type: 3}
+      delay: 1.6
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 1d5a869260c3f1943a8acddbffa406c9, type: 2}
     stepOrder: 2
@@ -2629,7 +2643,9 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 517210782}
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
+      delay: 0.8
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: a11d7451653bd92408be709ec01bb5c1, type: 2}
     stepOrder: 3
@@ -2648,9 +2664,11 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 517210782}
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
+      delay: 0.4
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 0}
+    animClip: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
     stepOrder: 4
     highlightThis: {fileID: 0}
     highlightTarget: {fileID: 0}

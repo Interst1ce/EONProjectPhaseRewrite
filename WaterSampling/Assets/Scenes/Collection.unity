@@ -2789,7 +2789,11 @@ MonoBehaviour:
   steps:
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 985292566645c24469866b6443c78f65, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 0}
+      delay: 0
+    - soundEffect: {fileID: 0}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 6e1cd93267256944bbe54a7abad0a744, type: 2}
     stepOrder: 0
