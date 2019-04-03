@@ -88,6 +88,8 @@ public class StoryManager : MonoBehaviour {
     [System.Serializable]
     public class SoundEffect : object {
         [SerializeField]
+        public bool loop;
+        [SerializeField]
         public AudioClip soundEffect;
         [SerializeField]
         public float delay;
@@ -184,6 +186,9 @@ public class StoryManager : MonoBehaviour {
         foreach(SoundEffect effect in effects) {
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = effect.soundEffect;
+            if (effect.loop) {
+                audioSource.loop = true;
+            }
             if(effect.delay == 0) {
                 audioSource.Play();
             } else {

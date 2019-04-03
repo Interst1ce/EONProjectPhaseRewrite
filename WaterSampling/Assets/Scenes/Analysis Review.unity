@@ -518,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 8350884585525758968, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -727,8 +727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Object: {fileID: 517210782}
   storymanager: {fileID: 2119829935}
-  clipA: {fileID: 7400000, guid: 5421785afe1b8e742a74674363d27fdd, type: 2}
-  clipB: {fileID: 7400000, guid: d5c8526f3531f474e8b798f25a033a7d, type: 2}
+  clipA: {fileID: 7400000, guid: 01f6a728076a8114b933bb11f0787c03, type: 2}
+  clipB: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
+  clipAA: {fileID: 7400000, guid: 778c83d2ffcf11d428a097814cdafcb8, type: 2}
   steptoactivate: 4
 --- !u!1 &818339943
 GameObject:
@@ -1079,7 +1080,7 @@ PrefabInstance:
     - target: {fileID: 3122138373861442834, guid: 46757a287b896ac42bf70acd50b50fad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3122138373861442834, guid: 46757a287b896ac42bf70acd50b50fad,
         type: 3}
@@ -1244,8 +1245,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1328404322}
   - {fileID: 248224055}
+  - {fileID: 1328404322}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

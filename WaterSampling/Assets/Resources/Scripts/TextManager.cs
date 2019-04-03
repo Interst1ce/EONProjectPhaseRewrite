@@ -188,6 +188,18 @@ public class TextManager : MonoBehaviour {
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        //sets all alphas to 0 so that there aren't "ghosts"
+        chapter1Title.color = new Color(color.r,color.g,color.b,0);
+        chapter2Title.color = new Color(color.r,color.g,color.b,0);
+        chapter3Title.color = new Color(color.r,color.g,color.b,0);
+        chapter1Summary.color = new Color(color.r,color.g,color.b,0);
+        chapter2Summary.color = new Color(color.r,color.g,color.b,0);
+        chapter3Summary.color = new Color(color.r,color.g,color.b,0);
+        chapter1Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
+        chapter2Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
+        chapter3Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
+
         //reset elapsedTime so that the UI can fade back in
         elapsedTime = 0;
 

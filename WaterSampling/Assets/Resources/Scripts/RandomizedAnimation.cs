@@ -13,6 +13,8 @@ public class RandomizedAnimation : MonoBehaviour
     [SerializeField]
     public AnimationClip clipB;
     [SerializeField]
+    public AnimationClip clipAA;
+    [SerializeField]
     public int steptoactivate;
     int randomint;
     private bool isrunning = false;
@@ -28,13 +30,14 @@ public class RandomizedAnimation : MonoBehaviour
             randomint = Random.Range(0, 4);
             if (randomint == 3)
             {
-                Object.GetComponent<Animator>().Play(clipA.name);
-                storymanager.steps[storymanager.currentStep].correctChoice = 0;
+                storymanager.steps[storymanager.currentStep + 1].animClip = clipA;
+                storymanager.steps[storymanager.currentStep + 2].animClip = clipAA;
+                storymanager.steps[storymanager.currentStep + 2].correctChoice = 0;
             }
             if (randomint < 3)
             {
-                Object.GetComponent<Animator>().Play(clipB.name);
-                storymanager.steps[storymanager.currentStep].correctChoice = 1;
+                storymanager.steps[storymanager.currentStep + 1].animClip = clipB;
+                storymanager.steps[storymanager.currentStep + 2].correctChoice = 1;
             }
 
 
