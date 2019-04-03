@@ -293,6 +293,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 366937336}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &691405710
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Object_Tracker001Material
+
+    14810'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8c0d36e2a95d44babc5bb440b0dbd7a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &780691584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1290,166 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!43 &1619186450
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ImageTargetMesh14800
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf00000000000000bf000000000000803f000000000000000000000000000000bf000000000000003f000000000000803f00000000000000000000803f0000003f00000000000000bf000000000000803f000000000000803f000000000000003f000000000000003f000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1652766346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,34 +2309,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652766364}
   m_Mesh: {fileID: 4300000, guid: 13ae2f5e31bd0244cbc56783ee386f1b, type: 3}
---- !u!21 &1719243066
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Object_Tracker001Material
-
-    22984'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8c0d36e2a95d44babc5bb440b0dbd7a1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1860176662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,7 +2338,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860176662}
-  m_Mesh: {fileID: 1951178521}
+  m_Mesh: {fileID: 1619186450}
 --- !u!23 &1860176664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2196,7 +2356,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1719243066}
+  - {fileID: 691405710}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2492,166 +2652,6 @@ Transform:
   m_Father: {fileID: 1860176668}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!43 &1951178521
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh43342
-  serializedVersion: 9
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.5}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 2
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf00000000000000bf000000000000803f000000000000000000000000000000bf000000000000003f000000000000803f00000000000000000000803f0000003f00000000000000bf000000000000803f000000000000803f000000000000003f000000000000003f000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.5}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimized: 0
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &2039958580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,7 +2789,13 @@ MonoBehaviour:
   steps:
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 985292566645c24469866b6443c78f65, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: f3195158c56b1c344acb77f5032395b1, type: 3}
+      delay: 0
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 6e1cd93267256944bbe54a7abad0a744, type: 2}
     stepOrder: 0
@@ -2808,7 +2814,10 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: a3f25afd684f5794ebd4fa62b3a037c0, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: f3195158c56b1c344acb77f5032395b1, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 417d07bf92ccf1240b2278f67980b816, type: 2}
     stepOrder: 1
@@ -2827,7 +2836,10 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
     narateAudio: {fileID: 8300000, guid: d231fa459898b964c801def1ced5b3f7, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 9af7cc2862ad9764cb722ba1d89cb45c, type: 2}
     stepOrder: 2
@@ -2846,7 +2858,13 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 1652766366}
     narateAudio: {fileID: 8300000, guid: 1ceb315f54211b64aada264e992ef16e, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 1
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 1.3
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 4b36eba7399e2ff4aab8dcc4fe384fb8, type: 2}
     stepOrder: 3
@@ -2865,8 +2883,14 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 3773c767f8291db43981b89d3f3280a0, type: 3}
-    soundEffects: []
-    missTap: {fileID: 0}
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: f3195158c56b1c344acb77f5032395b1, type: 3}
+      delay: 0
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
+    missTap: {fileID: 8300000, guid: f3195158c56b1c344acb77f5032395b1, type: 3}
     animClip: {fileID: 7400000, guid: 6e1cd93267256944bbe54a7abad0a744, type: 2}
     stepOrder: 4
     highlightThis: {fileID: 7400000, guid: 20460a088b98ca247ab28b8951ad0a30, type: 2}
@@ -2884,7 +2908,13 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 73c2f8a41c96caf47a9f45d3e5e6add5, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 47af29b5e5cf44c459dbf593fd04ebcc, type: 3}
+      delay: 0
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: fde5ee6c679b87d4991de4e2cca99013, type: 2}
     stepOrder: 5
@@ -2903,7 +2933,13 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 1874463705}
     narateAudio: {fileID: 8300000, guid: d4a996c4a3627ad40b1d16f0843ddd29, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
+      delay: 0
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 2e82a5265037fdc48a6e0e74881143d5, type: 2}
     stepOrder: 6
@@ -2922,7 +2958,13 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 1255052218}
     narateAudio: {fileID: 8300000, guid: 09def823cff696246a3dd8b90c5b9641, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
+      delay: 0.8
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 50e737c5dd35f7d41b2162be142a32ac, type: 2}
     stepOrder: 7
@@ -2941,7 +2983,10 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 1255052218}
     narateAudio: {fileID: 0}
-    soundEffects: []
+    soundEffects:
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 3d1995dfa85b16f4b877b7f8b9ce0690, type: 2}
     stepOrder: 8
@@ -2960,7 +3005,13 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 1874463705}
     narateAudio: {fileID: 8300000, guid: b5676df846c0e114fbef76bb4d0267ae, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
+      delay: 0.5
+    - loop: 1
+      soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 9eecc4bd24f84804f868f243a8f4edaa, type: 2}
     stepOrder: 9
@@ -2979,7 +3030,10 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 2348b5ab4247a814c8e8154e552d67f4, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 77537ddf079f51643b18064a9e694d3b, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: c220f620bbd6cba418a368e4efa8f85f, type: 2}
     stepOrder: 10
@@ -2998,7 +3052,10 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
     narateAudio: {fileID: 8300000, guid: aa7aeb06129fe7949ad66ba1fdce57d9, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
+      delay: 1
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 009f91ee4be87cd49ac23def17ba9515, type: 2}
     stepOrder: 11

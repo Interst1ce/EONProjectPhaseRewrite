@@ -244,7 +244,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123484976}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1678, y: 0.3096, z: -0.2118}
   m_LocalScale: {x: 2.2369, y: 2.2369, z: 2.2369}
   m_Children:
@@ -290,14 +290,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123484986}
-  m_LocalRotation: {x: -0.01413362, y: 0.70696557, z: 0.70696557, w: 0.01413362}
+  m_LocalRotation: {x: -0.014129929, y: 0.70696574, z: 0.70696545, w: 0.014129935}
   m_LocalPosition: {x: -0.0058620977, y: 0, z: -0.006750601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 123447064}
   m_Father: {fileID: 123447056}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 177.70938, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.99999, y: 177.71, z: 0}
 --- !u!4 &123447068
 Transform:
   m_ObjectHideFlags: 0
@@ -2292,7 +2292,15 @@ MonoBehaviour:
   steps:
   - objectTarget: {fileID: 1652731954}
     narateAudio: {fileID: 8300000, guid: 7ad8cbf2090df804a9f5aa5586a33a12, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 1.6
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 2
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 2.9
+    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+      delay: 3.3
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: f95e2e48a5d4d214b8bfdb286c276deb, type: 2}
     stepOrder: 0
@@ -2311,7 +2319,9 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 6d12d19cf7ecb2045bf0ca4da2e49acd, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: d4e747504f98fe64c84441551b72f366, type: 3}
+      delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 6b9ec3e492b8e8d45b5841435946b2ed, type: 2}
     stepOrder: 1
@@ -2330,7 +2340,11 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 123484976}
     narateAudio: {fileID: 8300000, guid: bed3f5387d8127a469daeb3507648dc7, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 81fd6ef21b33d5a40a31dd1597caefb4, type: 3}
+      delay: 1.5
+    - soundEffect: {fileID: 8300000, guid: 678a8daaa0339cf4086dbf951e79a22f, type: 3}
+      delay: 1.6
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 1d5a869260c3f1943a8acddbffa406c9, type: 2}
     stepOrder: 2
@@ -2349,7 +2363,9 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 25ffe3d9e0e096244ad43179b0e6f24b, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 2c8202ee3793d824bb902a9bebba468e, type: 3}
+      delay: 0.8
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: a11d7451653bd92408be709ec01bb5c1, type: 2}
     stepOrder: 3
@@ -2368,7 +2384,9 @@ MonoBehaviour:
     correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: d050ffe77225ef24e9d3399b54795b45, type: 3}
-    soundEffects: []
+    soundEffects:
+    - soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
+      delay: 0.4
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
     stepOrder: 4
