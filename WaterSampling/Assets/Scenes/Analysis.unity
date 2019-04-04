@@ -2318,15 +2318,14 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
+    question: 
+    choices: []
+    correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 6d12d19cf7ecb2045bf0ca4da2e49acd, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: d4e747504f98fe64c84441551b72f366, type: 3}
+      soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
       delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 6b9ec3e492b8e8d45b5841435946b2ed, type: 2}
@@ -2341,10 +2340,9 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
+    question: 
+    choices: []
+    correctChoice: 0
   - objectTarget: {fileID: 123484976}
     narateAudio: {fileID: 8300000, guid: bed3f5387d8127a469daeb3507648dc7, type: 3}
     soundEffects:
@@ -2367,15 +2365,14 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
+    question: 
+    choices: []
+    correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 25ffe3d9e0e096244ad43179b0e6f24b, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 2c8202ee3793d824bb902a9bebba468e, type: 3}
+      soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
       delay: 0.8
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: a11d7451653bd92408be709ec01bb5c1, type: 2}
@@ -2390,10 +2387,9 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
+    question: 
+    choices: []
+    correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: d050ffe77225ef24e9d3399b54795b45, type: 3}
     soundEffects:
@@ -2413,10 +2409,9 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
+    question: 
+    choices: []
+    correctChoice: 0
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: d952fc30ea047f84db9fda82a1ecaa0e, type: 3}
     soundEffects: []
@@ -2433,12 +2428,11 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 1
-    question:
-      question: Is this water safe?
-      choices:
-      - Yes
-      - No
-      correctChoice: 1
+    question: Is this water safe?
+    choices:
+    - Yes
+    - No
+    correctChoice: 1
 --- !u!82 &2119829936
 AudioSource:
   m_ObjectHideFlags: 0
