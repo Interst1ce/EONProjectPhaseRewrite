@@ -165,7 +165,16 @@ public class StoryManager : MonoBehaviour {
                                 qAPanel.GetComponent<QuestionManager>().choices = elem.question.choices;
                                 qAPanel.GetComponent<QuestionManager>().answer = elem.question.correctChoice;
                                 if (elem.narateAudio != null) {
+                                    if (elem.animClip != null) {
+                                        if(elem.narateAudio.length > elem.animClip.length) {
+                                            Invoke("CallQuestion",elem.narateAudio.length);
+                                        } else {
+                                            Invoke("CallQuestion",elem.animClip.length);
+                                        }
+                                    }
                                     Invoke("CallQuestion",elem.narateAudio.length);
+                                } else if(elem.animClip != null) {
+                                    Invoke("CallQuestion",elem.animClip.length);
                                 }
                                 CallQuestion();
                             }
