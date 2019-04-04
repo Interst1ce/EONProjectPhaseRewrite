@@ -35,7 +35,8 @@ public class StoryManager : MonoBehaviour {
     public AudioClip introAudio;
     [SerializeField]
     public AudioClip outroAudio;
-
+    [SerializeField]
+    public SoundEffect backgroundAudioStart;
     [SerializeField]
     public GameObject slider;
 
@@ -196,6 +197,18 @@ public class StoryManager : MonoBehaviour {
             }
         }
     }
+    public void PlaySoundEffects(SoundEffect effect) {
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = effect.soundEffect;
+        if (effect.loop) {
+            audioSource.loop = true;
+        }
+        if (effect.delay == 0) {
+            audioSource.Play();
+        } else {
+            StartCoroutine(DelaySoundEffect(audioSource, effect.delay));
+        }
+    }
 
     IEnumerator DelaySoundEffect(AudioSource source, float delay) {
         float elapsedTime = 0;
@@ -211,6 +224,7 @@ public class StoryManager : MonoBehaviour {
         if (!introPlayed) {
             introPlayed = !introPlayed;
             PlayAudio(introAudio);
+            PlaySoundEffects(backgroundAudioStart);
         }
     }
 
