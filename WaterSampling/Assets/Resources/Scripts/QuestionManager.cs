@@ -14,6 +14,12 @@ public class QuestionManager : MonoBehaviour
     public List<Image> imageToBeFaded = new List<Image>();
     GameObject qAPanel;
     GameObject questionPanel;
+    AudioSource audioSource;
+
+    [SerializeField]
+    public AudioClip buttonSound;
+    [SerializeField]
+    public AudioClip correctSound;
 
     private void Awake() {
         qAPanel = GameObject.Find("QAPanel");
@@ -21,6 +27,8 @@ public class QuestionManager : MonoBehaviour
         answerLayouts.Add(GameObject.Find("AnswerLayout2"));
         answerLayouts.Add(GameObject.Find("AnswerLayout3"));
         answerLayouts.Add(GameObject.Find("AnswerLayout4"));
+        audioSource = new AudioSource();
+        audioSource.clip = buttonSound;
     }
 
     private void Start() {
@@ -105,7 +113,11 @@ public class QuestionManager : MonoBehaviour
     }
     //call from OnClick event from AnswerButtons
     public void CheckAnswer(int choice) {
+        audioSource.Play();
         if(choice == answer) {
+            AudioSource correct = new AudioSource();
+            correct.clip = correctSound;
+            correct.Play();
             StartCoroutine(FadeUI(1));
             Invoke("DisableUI",1);
         }
