@@ -2293,13 +2293,17 @@ MonoBehaviour:
   - objectTarget: {fileID: 1652731954}
     narateAudio: {fileID: 8300000, guid: 7ad8cbf2090df804a9f5aa5586a33a12, type: 3}
     soundEffects:
-    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 1.6
-    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 2
-    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 2.9
-    - soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 3.3
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: f95e2e48a5d4d214b8bfdb286c276deb, type: 2}
@@ -2320,7 +2324,8 @@ MonoBehaviour:
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 6d12d19cf7ecb2045bf0ca4da2e49acd, type: 3}
     soundEffects:
-    - soundEffect: {fileID: 8300000, guid: d4e747504f98fe64c84441551b72f366, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
       delay: 0
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 6b9ec3e492b8e8d45b5841435946b2ed, type: 2}
@@ -2341,9 +2346,11 @@ MonoBehaviour:
   - objectTarget: {fileID: 123484976}
     narateAudio: {fileID: 8300000, guid: bed3f5387d8127a469daeb3507648dc7, type: 3}
     soundEffects:
-    - soundEffect: {fileID: 8300000, guid: 81fd6ef21b33d5a40a31dd1597caefb4, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 81fd6ef21b33d5a40a31dd1597caefb4, type: 3}
       delay: 1.5
-    - soundEffect: {fileID: 8300000, guid: 678a8daaa0339cf4086dbf951e79a22f, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 678a8daaa0339cf4086dbf951e79a22f, type: 3}
       delay: 1.6
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 1d5a869260c3f1943a8acddbffa406c9, type: 2}
@@ -2364,7 +2371,8 @@ MonoBehaviour:
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: 25ffe3d9e0e096244ad43179b0e6f24b, type: 3}
     soundEffects:
-    - soundEffect: {fileID: 8300000, guid: 2c8202ee3793d824bb902a9bebba468e, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
       delay: 0.8
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: a11d7451653bd92408be709ec01bb5c1, type: 2}
@@ -2385,7 +2393,8 @@ MonoBehaviour:
   - objectTarget: {fileID: 4197247634080686774}
     narateAudio: {fileID: 8300000, guid: d050ffe77225ef24e9d3399b54795b45, type: 3}
     soundEffects:
-    - soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
       delay: 0.4
     missTap: {fileID: 0}
     animClip: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}

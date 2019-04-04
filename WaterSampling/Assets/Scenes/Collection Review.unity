@@ -2439,7 +2439,7 @@ MonoBehaviour:
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: f3195158c56b1c344acb77f5032395b1, type: 3}
+      soundEffect: {fileID: 0}
       delay: 0
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
@@ -2464,7 +2464,7 @@ MonoBehaviour:
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 47af29b5e5cf44c459dbf593fd04ebcc, type: 3}
+      soundEffect: {fileID: 0}
       delay: 0
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 4095a41ceabbfea45bccc5440d5f77ed, type: 3}
@@ -2586,7 +2586,7 @@ MonoBehaviour:
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 77537ddf079f51643b18064a9e694d3b, type: 3}
+      soundEffect: {fileID: 0}
       delay: 0
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: c220f620bbd6cba418a368e4efa8f85f, type: 2}
