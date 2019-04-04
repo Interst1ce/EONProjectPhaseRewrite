@@ -28,11 +28,11 @@ public class RandomizedAnimation : MonoBehaviour {
             if (randomint == 3) {
                 storymanager.steps[storymanager.currentStep + 1].animClip = clipA;
                 storymanager.steps[storymanager.currentStep + 2].animClip = clipAA;
-                storymanager.steps[storymanager.currentStep + 2].correctChoice = 0;
+                storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 0;
             }
             if (randomint < 3) {
                 storymanager.steps[storymanager.currentStep + 1].animClip = clipB;
-                storymanager.steps[storymanager.currentStep + 2].correctChoice = 1;
+                storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 1;
             }
 
 

@@ -77,6 +77,11 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public bool hasQuestion;
         [SerializeField]
+        public Question question;        
+    }
+    [System.Serializable]
+    public class Question : object {
+        [SerializeField]
         public String question;
         [SerializeField]
         //Do not set this array to be larger than 4
@@ -156,13 +161,13 @@ public class StoryManager : MonoBehaviour {
                             } 
                             if (elem.hasQuestion) {
                                 //send necessary data to the QuestionManager and call Question()
-                                qAPanel.GetComponent<QuestionManager>().question = elem.question;
-                                qAPanel.GetComponent<QuestionManager>().choices = elem.choices;
-                                qAPanel.GetComponent<QuestionManager>().answer = elem.correctChoice;
+                                qAPanel.GetComponent<QuestionManager>().question = elem.question.question;
+                                qAPanel.GetComponent<QuestionManager>().choices = elem.question.choices;
+                                qAPanel.GetComponent<QuestionManager>().answer = elem.question.correctChoice;
                                 if (elem.narateAudio != null) {
-                                    Invoke("Question",elem.narateAudio.length);
+                                    Invoke("CallQuestion",elem.narateAudio.length);
                                 }
-                                Question();
+                                CallQuestion();
                             }
                         } else if (hit.transform.gameObject != elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
                             PlayAudio(elem.missTap);
@@ -173,7 +178,7 @@ public class StoryManager : MonoBehaviour {
         }
     }
 
-    public void Question() {
+    public void CallQuestion() {
         qAPanel.GetComponent<QuestionManager>().Question();
     }
 
@@ -189,11 +194,7 @@ public class StoryManager : MonoBehaviour {
             if (effect.loop) {
                 audioSource.loop = true;
             }
-            if(effect.delay == 0) {
-                audioSource.Play();
-            } else {
-                StartCoroutine(DelaySoundEffect(audioSource, effect.delay));
-            }
+            audioSource.PlayDelayed(effect.delay);
         }
     }
 
