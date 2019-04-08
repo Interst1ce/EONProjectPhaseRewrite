@@ -8,7 +8,8 @@ public class Water : MonoBehaviour
     public GameObject storyManager;
     public GameObject water;
     public GameObject parent;
-
+    public StoryManager eventSystem;
+    public AudioClip waterSound;
     public bool jarUnder;
 
     private void Awake() {

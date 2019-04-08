@@ -34,7 +34,7 @@ public class QuestionManager : MonoBehaviour
     }
 
     private void Start() {
-        qAPanel.SetActive(false);
+       qAPanel.SetActive(false);
     }
 
     public void Question() {
@@ -95,7 +95,7 @@ public class QuestionManager : MonoBehaviour
                         elem.color = new Color(0.25f,0.25f,0.25f,Mathf.Lerp(0,0.75f,(elapsedTime / targetTime)));
                     } else {
                         elem.color = new Color(1,1,1,Mathf.Lerp(0,1,(elapsedTime / targetTime)));
-                    } 
+                    }
                 }
             } else {
                 foreach (TextMeshProUGUI elem in textToBeFaded) {
