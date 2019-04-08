@@ -2788,7 +2788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
-  introAudio: {fileID: 8300000, guid: eebf193864398ee45bc099e78ed3db0a, type: 3}
+  introAudio: {fileID: 8300000, guid: c0a6d943b7232d146a370ec0dbaaa76d, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
     loop: 0
@@ -2797,7 +2797,7 @@ MonoBehaviour:
   slider: {fileID: 1608549453}
   steps:
   - objectTarget: {fileID: 6701089970778582649}
-    narateAudio: {fileID: 8300000, guid: 985292566645c24469866b6443c78f65, type: 3}
+    narateAudio: {fileID: 8300000, guid: dc0a31851059ae34987db1d77db296ba, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2823,7 +2823,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
-    narateAudio: {fileID: 8300000, guid: a3f25afd684f5794ebd4fa62b3a037c0, type: 3}
+    narateAudio: {fileID: 8300000, guid: f4b8900fa1efd5e4f9fa82249266a47a, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2846,7 +2846,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
-    narateAudio: {fileID: 8300000, guid: d231fa459898b964c801def1ced5b3f7, type: 3}
+    narateAudio: {fileID: 8300000, guid: 3efe470665e207b489d135a56b7bcec4, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
@@ -2869,7 +2869,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 1652766366}
-    narateAudio: {fileID: 8300000, guid: 1ceb315f54211b64aada264e992ef16e, type: 3}
+    narateAudio: {fileID: 8300000, guid: 97b3a6b958ee3144a99e0cc641ae490f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
@@ -2895,7 +2895,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
-    narateAudio: {fileID: 8300000, guid: 3773c767f8291db43981b89d3f3280a0, type: 3}
+    narateAudio: {fileID: 8300000, guid: 5294976ef7d39334eb6089c1a7fb6857, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2921,7 +2921,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
-    narateAudio: {fileID: 8300000, guid: 73c2f8a41c96caf47a9f45d3e5e6add5, type: 3}
+    narateAudio: {fileID: 8300000, guid: f8ee76202d055f84998c767491a2e423, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2947,7 +2947,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 1874463705}
-    narateAudio: {fileID: 8300000, guid: d4a996c4a3627ad40b1d16f0843ddd29, type: 3}
+    narateAudio: {fileID: 8300000, guid: a9520405f2273d44a8f4d38b9bffd168, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
@@ -2973,7 +2973,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 1255052218}
-    narateAudio: {fileID: 8300000, guid: 09def823cff696246a3dd8b90c5b9641, type: 3}
+    narateAudio: {fileID: 8300000, guid: 71ec98d2db697894d86cabdb3069f902, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
@@ -3022,7 +3022,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 1874463705}
-    narateAudio: {fileID: 8300000, guid: b5676df846c0e114fbef76bb4d0267ae, type: 3}
+    narateAudio: {fileID: 8300000, guid: 68cfad5212835924e9474361233120e0, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
@@ -3048,7 +3048,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
-    narateAudio: {fileID: 8300000, guid: 2348b5ab4247a814c8e8154e552d67f4, type: 3}
+    narateAudio: {fileID: 8300000, guid: cb68b0cfae6449b43bc97d0eb685b3d2, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -3071,7 +3071,7 @@ MonoBehaviour:
       choices: []
       correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
-    narateAudio: {fileID: 8300000, guid: aa7aeb06129fe7949ad66ba1fdce57d9, type: 3}
+    narateAudio: {fileID: 8300000, guid: b9135047c16ee7a42b6434a7f0cade2f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
