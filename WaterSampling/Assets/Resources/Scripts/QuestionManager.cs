@@ -28,11 +28,11 @@ public class QuestionManager : MonoBehaviour
         answerLayouts.Add(GameObject.Find("AnswerLayout3"));
         answerLayouts.Add(GameObject.Find("AnswerLayout4"));
         audioSource = new AudioSource();
-        audioSource.clip = buttonSound;
+        //audioSource.clip = buttonSound;
     }
 
     private void Start() {
-        qAPanel.SetActive(false);
+       qAPanel.SetActive(false);
     }
 
     public void Question() {

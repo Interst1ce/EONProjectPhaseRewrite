@@ -26,7 +26,7 @@ AnimationClip:
     - time: 1
       value: {fileID: 2100000, guid: 431d2bdb16982be4c9730a32a6a520da, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: 
+    path: Jug
     classID: 23
     script: {fileID: 0}
   m_SampleRate: 60
@@ -37,7 +37,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 64137292
       attribute: 0
       script: {fileID: 0}
       typeID: 23
