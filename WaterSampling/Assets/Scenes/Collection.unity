@@ -872,6 +872,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3122138373861442845, guid: 46757a287b896ac42bf70acd50b50fad,
+        type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9226f0684031e79408b41bcb3ecc7fdc, type: 3}
     - target: {fileID: 3122138375302003769, guid: 46757a287b896ac42bf70acd50b50fad,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -2785,6 +2790,10 @@ MonoBehaviour:
   currentStep: 0
   introAudio: {fileID: 8300000, guid: eebf193864398ee45bc099e78ed3db0a, type: 3}
   outroAudio: {fileID: 0}
+  backgroundAudioStart:
+    loop: 0
+    soundEffect: {fileID: 0}
+    delay: 0
   slider: {fileID: 1608549453}
   steps:
   - objectTarget: {fileID: 6701089970778582649}
@@ -2809,9 +2818,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: a3f25afd684f5794ebd4fa62b3a037c0, type: 3}
     soundEffects:
@@ -2831,9 +2841,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
     narateAudio: {fileID: 8300000, guid: d231fa459898b964c801def1ced5b3f7, type: 3}
     soundEffects:
@@ -2853,9 +2864,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 1652766366}
     narateAudio: {fileID: 8300000, guid: 1ceb315f54211b64aada264e992ef16e, type: 3}
     soundEffects:
@@ -2878,9 +2890,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 3773c767f8291db43981b89d3f3280a0, type: 3}
     soundEffects:
@@ -2903,9 +2916,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 73c2f8a41c96caf47a9f45d3e5e6add5, type: 3}
     soundEffects:
@@ -2928,9 +2942,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 1874463705}
     narateAudio: {fileID: 8300000, guid: d4a996c4a3627ad40b1d16f0843ddd29, type: 3}
     soundEffects:
@@ -2953,9 +2968,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 1255052218}
     narateAudio: {fileID: 8300000, guid: 09def823cff696246a3dd8b90c5b9641, type: 3}
     soundEffects:
@@ -2978,9 +2994,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 1255052218}
     narateAudio: {fileID: 0}
     soundEffects:
@@ -3000,9 +3017,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 1874463705}
     narateAudio: {fileID: 8300000, guid: b5676df846c0e114fbef76bb4d0267ae, type: 3}
     soundEffects:
@@ -3025,9 +3043,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582649}
     narateAudio: {fileID: 8300000, guid: 2348b5ab4247a814c8e8154e552d67f4, type: 3}
     soundEffects:
@@ -3047,9 +3066,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 6701089970778582651}
     narateAudio: {fileID: 8300000, guid: aa7aeb06129fe7949ad66ba1fdce57d9, type: 3}
     soundEffects:
@@ -3069,9 +3089,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
 --- !u!82 &2119829936
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3183,6 +3204,8 @@ MonoBehaviour:
   storyManager: {fileID: 0}
   water: {fileID: 0}
   parent: {fileID: 0}
+  eventSystem: {fileID: 0}
+  waterSound: {fileID: 0}
   jarUnder: 0
 --- !u!33 &6701089970775618169
 MeshFilter:

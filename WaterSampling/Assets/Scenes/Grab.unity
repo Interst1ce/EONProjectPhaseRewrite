@@ -412,12 +412,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 14959463}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &250722671 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7184904319050052849, guid: e3515be5cc7c2ec4bbb524296990844a,
-    type: 3}
-  m_PrefabInstance: {fileID: 14959463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &378288082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -909,12 +903,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056001968}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1096576753 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3782758758288205832, guid: e3515be5cc7c2ec4bbb524296990844a,
-    type: 3}
-  m_PrefabInstance: {fileID: 14959463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1276418590
 Material:
   serializedVersion: 6
@@ -1186,6 +1174,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3122138373861442845, guid: 46757a287b896ac42bf70acd50b50fad,
+        type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9226f0684031e79408b41bcb3ecc7fdc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46757a287b896ac42bf70acd50b50fad, type: 3}
 --- !u!224 &1299794577 stripped
@@ -1193,12 +1186,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3122138373861442834, guid: 46757a287b896ac42bf70acd50b50fad,
     type: 3}
   m_PrefabInstance: {fileID: 1299794576}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1369355283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6741974508668839739, guid: e3515be5cc7c2ec4bbb524296990844a,
-    type: 3}
-  m_PrefabInstance: {fileID: 14959463}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860176662
 GameObject:
@@ -1413,18 +1400,6 @@ Transform:
   m_Father: {fileID: 1860176668}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1975381159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 471081683036194604, guid: e3515be5cc7c2ec4bbb524296990844a,
-    type: 3}
-  m_PrefabInstance: {fileID: 14959463}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2053090937 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 847054758226703831, guid: e3515be5cc7c2ec4bbb524296990844a,
-    type: 3}
-  m_PrefabInstance: {fileID: 14959463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2119829929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,10 +1411,8 @@ GameObject:
   - component: {fileID: 2119829933}
   - component: {fileID: 2119829932}
   - component: {fileID: 2119829931}
-  - component: {fileID: 2119829934}
   - component: {fileID: 2119829935}
   - component: {fileID: 2119829936}
-  - component: {fileID: 2119829937}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1495,24 +1468,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119829934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119829929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 625166bae56ca3f4d929bd3c7f5d05b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toToggle:
-  - {fileID: 1096576753}
-  - {fileID: 250722671}
-  - {fileID: 2053090937}
-  - {fileID: 1975381159}
-  - {fileID: 1369355283}
 --- !u!114 &2119829935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,9 +1508,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3353160390322442603}
     narateAudio: {fileID: 8300000, guid: 22b94eff006122345a09fb4694ead931, type: 3}
     soundEffects:
@@ -1575,9 +1531,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 5877788130517008841}
     narateAudio: {fileID: 8300000, guid: b7177b7011d9b614e871d754fcd857b8, type: 3}
     soundEffects:
@@ -1600,9 +1557,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3353160390322442605}
     narateAudio: {fileID: 8300000, guid: cd0757d70da3c714098ad8c8453cbce2, type: 3}
     soundEffects:
@@ -1622,9 +1580,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3353160390322442601}
     narateAudio: {fileID: 8300000, guid: 0ecb25a8c8b7a1a4aaf49adb3d9d54de, type: 3}
     soundEffects: []
@@ -1641,9 +1600,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3636387985646979409}
     narateAudio: {fileID: 8300000, guid: 3341eb9501703354b809f2d7613364b6, type: 3}
     soundEffects:
@@ -1663,9 +1623,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3353160390322442601}
     narateAudio: {fileID: 8300000, guid: dfff9ba2868a64141a284644a4d2e40c, type: 3}
     soundEffects: []
@@ -1682,9 +1643,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
   - objectTarget: {fileID: 3636387985646979409}
     narateAudio: {fileID: 0}
     soundEffects:
@@ -1704,9 +1666,10 @@ MonoBehaviour:
     manipulationAxis: 0
     manipulationMultiplier: 0
     hasQuestion: 0
-    question: 
-    choices: []
-    correctChoice: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
 --- !u!82 &2119829936
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1803,22 +1766,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2119829937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119829929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31826813d3ff61e4ea98a3b58c005edd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storyManager: {fileID: 0}
-  water: {fileID: 0}
-  parent: {fileID: 0}
-  jarUnder: 0
 --- !u!4 &296149340320944088
 Transform:
   m_ObjectHideFlags: 0

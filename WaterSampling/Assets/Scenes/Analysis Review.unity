@@ -520,16 +520,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_Name
@@ -589,6 +579,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2661953587329213317, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -1307,6 +1307,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3122138373861442845, guid: 46757a287b896ac42bf70acd50b50fad,
+        type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9226f0684031e79408b41bcb3ecc7fdc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46757a287b896ac42bf70acd50b50fad, type: 3}
 --- !u!224 &1328404322 stripped
@@ -2569,6 +2574,10 @@ MonoBehaviour:
   currentStep: 0
   introAudio: {fileID: 8300000, guid: dadbbe4dc54ffbb418a8e795ab76e0c9, type: 3}
   outroAudio: {fileID: 8300000, guid: df02e5e622d0a694daeecfbe6781895e, type: 3}
+  backgroundAudioStart:
+    loop: 0
+    soundEffect: {fileID: 0}
+    delay: 0
   slider: {fileID: 0}
   steps:
   - objectTarget: {fileID: 1652731954}
@@ -2835,6 +2844,8 @@ MonoBehaviour:
   - 
   textToBeFaded: []
   imageToBeFaded: []
+  buttonSound: {fileID: 0}
+  correctSound: {fileID: 0}
 --- !u!1 &5347474027324261399
 GameObject:
   m_ObjectHideFlags: 0
