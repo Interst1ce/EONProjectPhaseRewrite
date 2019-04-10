@@ -27,8 +27,10 @@ public class QuestionManager : MonoBehaviour
         answerLayouts.Add(GameObject.Find("AnswerLayout2"));
         answerLayouts.Add(GameObject.Find("AnswerLayout3"));
         answerLayouts.Add(GameObject.Find("AnswerLayout4"));
-        audioSource = new AudioSource();
-        //audioSource.clip = buttonSound;
+        audioSource = qAPanel.AddComponent<AudioSource>();
+        if(buttonSound != null) {
+            audioSource.clip = buttonSound;
+        }
     }
 
     private void Start() {
@@ -93,7 +95,7 @@ public class QuestionManager : MonoBehaviour
                         elem.color = new Color(0.25f,0.25f,0.25f,Mathf.Lerp(0,0.75f,(elapsedTime / targetTime)));
                     } else {
                         elem.color = new Color(1,1,1,Mathf.Lerp(0,1,(elapsedTime / targetTime)));
-                    } 
+                    }
                 }
             } else {
                 foreach (TextMeshProUGUI elem in textToBeFaded) {
@@ -113,11 +115,15 @@ public class QuestionManager : MonoBehaviour
     }
     //call from OnClick event from AnswerButtons
     public void CheckAnswer(int choice) {
-        audioSource.Play();
+        if(audioSource.clip != null) {
+            audioSource.Play();
+        }
         if(choice == answer) {
-            AudioSource correct = new AudioSource();
-            correct.clip = correctSound;
-            correct.Play();
+            AudioSource correct = qAPanel.AddComponent<AudioSource>();
+            if (correctSound != null) {
+                correct.clip = correctSound;
+                correct.Play();
+            }
             StartCoroutine(FadeUI(1));
             Invoke("DisableUI",1);
         }
