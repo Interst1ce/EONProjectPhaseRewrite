@@ -1,37 +1,14 @@
 fileFormatVersion: 2
-guid: 052cb8b3e00eb88438f9b15dfded7366
+guid: b5e38a1e30fc1914ba9b1fb8e86328cd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Dropper
-    100002: Dropper_cylinder
-    100004: //RootNode
-    100006: Jar
-    100008: Lid_dropper
-    100010: Water_cylinder
-    400000: Dropper
-    400002: Dropper_cylinder
-    400004: //RootNode
-    400006: Jar
-    400008: Lid_dropper
-    400010: Water_cylinder
-    2100000: 09 - Default
-    2100002: 07 - Default
-    2300000: Dropper
-    2300002: Dropper_cylinder
-    2300004: Jar
-    2300006: Lid_dropper
-    2300008: Water_cylinder
-    3300000: Dropper
-    3300002: Dropper_cylinder
-    3300004: Jar
-    3300006: Lid_dropper
-    3300008: Water_cylinder
-    4300000: Lid_dropper
-    4300002: Jar
-    4300004: Water_cylinder
-    4300006: Dropper
-    4300008: Dropper_cylinder
+    100000: //RootNode
+    400000: //RootNode
+    2100000: ice pack
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: ice pack
   externalObjects: {}
   materials:
     importMaterials: 1
