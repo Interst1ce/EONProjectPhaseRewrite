@@ -2051,11 +2051,6 @@ PrefabInstance:
       propertyPath: toToggle.Array.data[5]
       value: 
       objectReference: {fileID: 60663984}
-    - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7957052781499213534, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2085,6 +2080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -2501,9 +2501,11 @@ MonoBehaviour:
     manipulationMultiplier: 0
     hasQuestion: 1
     question:
-      question: 
-      choices: []
-      correctChoice: 0
+      question: Is this water safe?
+      choices:
+      - Yes
+      - No
+      correctChoice: 1
 --- !u!82 &2119829936
 AudioSource:
   m_ObjectHideFlags: 0
