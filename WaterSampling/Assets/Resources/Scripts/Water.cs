@@ -7,6 +7,7 @@ public class Water : MonoBehaviour
 {
     public GameObject storyManager;
     public GameObject water;
+    public GameObject water2;
     public GameObject parent;
     public StoryManager eventSystem;
     public AudioClip waterSound;
@@ -15,11 +16,13 @@ public class Water : MonoBehaviour
     private void Awake() {
         storyManager = this.gameObject;
         water = GameObject.Find("waterv1");
+        water2 = GameObject.Find("waterv2");
         parent = GameObject.Find("Faucet");
     }
 
     private void Start() {
         water.SetActive(false);
+        water2.SetActive(false);
     }
 
     void Update() {
@@ -34,8 +37,9 @@ public class Water : MonoBehaviour
                     water.SetActive(false);
                     break;
                 case 5:
-                    water.SetActive(true);
-                    water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
+                    water2.SetActive(true);
+                    water2.transform.position = new Vector3(-0.251f,0.355f,0.129f);
+                    water2.transform.localScale = new Vector3(16.40755f, 16.40756f, 57.42658f);
                     break;
                 case 6:
                     StartCoroutine(Lerp(0,100,1));
@@ -49,15 +53,15 @@ public class Water : MonoBehaviour
                     Invoke("AdjustWater", 0.15f);
                     break;
                 case 11:
-                    water.SetActive(false);
+                    water2.SetActive(false);
                     break;
             }
         } else if(SceneManager.GetActiveScene().name == "Collection Review") {
             switch (storyManager.GetComponent<StoryManager>().currentStep) {
                 case 3:
-                    water.SetActive(true);
-                    water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
-                    water.transform.localScale = new Vector3(16.40755f,16.40756f,57.42658f);
+                    water2.SetActive(true);
+                    water2.transform.position = new Vector3(-0.251f,0.355f,0.129f);
+                    water2.transform.localScale = new Vector3(16.40755f,16.40756f,57.42658f);
                     break;
                 case 4:
                     StartCoroutine(Lerp(0,100,1));
@@ -80,7 +84,7 @@ public class Water : MonoBehaviour
     IEnumerator Lerp(float start,float target,float time) {
         float elapsedTime = 0;
         while (elapsedTime < time) {
-            water.GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0,Mathf.Lerp(start,target,elapsedTime));
+            water2.GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0,Mathf.Lerp(start,target,elapsedTime));
             //water.GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0,(water.GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0) + target * Time.deltaTime));
             elapsedTime += Time.deltaTime;
             yield return null;
@@ -88,11 +92,11 @@ public class Water : MonoBehaviour
     }
     public void AdjustWater() {
         if (jarUnder) {
-            water.transform.position = new Vector3(-0.251f,0.487f,0.129f);
-            water.transform.localScale = new Vector3(16.40755f,16.40755f,31f);
+            water2.transform.position = new Vector3(-0.251f,0.487f,0.129f);
+            water2.transform.localScale = new Vector3(16.40755f,16.40755f,31f);
         } else {
-            water.transform.position = new Vector3(-0.251f,0.355f,0.129f);
-            water.transform.localScale = new Vector3(16.40755f, 16.40756f, 57.42658f);
+            water2.transform.position = new Vector3(-0.251f,0.355f,0.129f);
+            water2.transform.localScale = new Vector3(16.40755f, 16.40756f, 57.42658f);
         }
     }
 }
