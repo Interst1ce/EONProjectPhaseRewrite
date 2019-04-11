@@ -2003,7 +2003,7 @@ MonoBehaviour:
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 923fe3f3d73c7db468f19d3d594049b3, type: 2}
     stepOrder: 10
-    highlightThis: {fileID: 7400000, guid: e54a541341fa43441bfe02b8599c9d39, type: 2}
+    highlightThis: {fileID: 7400000, guid: e28a20c21eab7ee43b598810ef23ebde, type: 2}
     highlightTarget: {fileID: 5247186827344228106}
     tapOrDrag: 0
     hasSlider: 0
