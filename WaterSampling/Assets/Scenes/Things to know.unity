@@ -1451,7 +1451,13 @@ MonoBehaviour:
     delay: 0
   slider: {fileID: 0}
   steps:
-  - objectTarget: {fileID: 0}
+  - targets:
+    - objectTarget: {fileID: 0}
+      targetStep: 0
+    - objectTarget: {fileID: 0}
+      targetStep: 0
+    - objectTarget: {fileID: 0}
+      targetStep: 0
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1471,7 +1477,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1491,7 +1497,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1511,7 +1517,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1531,7 +1537,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1551,7 +1557,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1571,7 +1577,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
@@ -1591,7 +1597,7 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 0}
+  - targets: []
     narateAudio: {fileID: 0}
     soundEffects: []
     missTap: {fileID: 0}
