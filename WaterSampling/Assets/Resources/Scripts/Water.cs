@@ -75,7 +75,7 @@ public class Water : MonoBehaviour
                     Invoke("AdjustWater", 0.15f);
                     break;
                 case 9:
-                    water.SetActive(false);
+                    water2.SetActive(false);
                     break;
             }
         } 
