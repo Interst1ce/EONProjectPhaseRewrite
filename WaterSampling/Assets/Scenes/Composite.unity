@@ -1731,7 +1731,9 @@ MonoBehaviour:
     delay: 0
   slider: {fileID: 0}
   steps:
-  - objectTarget: {fileID: 9010644316912662406}
+  - targets:
+    - objectTarget: {fileID: 9010644316912662406}
+      targetStep: 1
     narateAudio: {fileID: 8300000, guid: c95428ff835271d48ab468e972051a12, type: 3}
     soundEffects:
     - loop: 1
@@ -1757,7 +1759,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 7212921644170123322}
+  - targets:
+    - objectTarget: {fileID: 7212921644170123322}
+      targetStep: 2
     narateAudio: {fileID: 8300000, guid: 1b7cdba54243b45479e0104770f724b4, type: 3}
     soundEffects:
     - loop: 1
@@ -1786,7 +1790,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 7212921644170123322}
+  - targets:
+    - objectTarget: {fileID: 7212921644170123322}
+      targetStep: 3
     narateAudio: {fileID: 8300000, guid: 44430ae5519cddb4784cdccc13488e94, type: 3}
     soundEffects:
     - loop: 1
@@ -1812,7 +1818,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 7212921644170123322}
+  - targets:
+    - objectTarget: {fileID: 7212921644170123322}
+      targetStep: 4
     narateAudio: {fileID: 8300000, guid: 3690238ab1c9cc646a0fcbe42fa4ac51, type: 3}
     soundEffects:
     - loop: 1
@@ -1838,7 +1846,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 5247186827344228106}
+  - targets:
+    - objectTarget: {fileID: 5247186827344228106}
+      targetStep: 5
     narateAudio: {fileID: 8300000, guid: 3245adff8d02a8c44ad41afbbe60c34e, type: 3}
     soundEffects:
     - loop: 1
@@ -1864,7 +1874,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 1273371182}
+  - targets:
+    - objectTarget: {fileID: 1273371182}
+      targetStep: 6
     narateAudio: {fileID: 8300000, guid: 52bf00e59e3954e4f9951a50d53cb04c, type: 3}
     soundEffects:
     - loop: 1
@@ -1890,7 +1902,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 1273371182}
+  - targets:
+    - objectTarget: {fileID: 1273371182}
+      targetStep: 7
     narateAudio: {fileID: 8300000, guid: 68283b3e0fb5a734db9a4844ee732408, type: 3}
     soundEffects:
     - loop: 1
@@ -1916,7 +1930,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 1273371182}
+  - targets:
+    - objectTarget: {fileID: 1273371182}
+      targetStep: 8
     narateAudio: {fileID: 8300000, guid: e7b7d144876774a4fab910721813ff5e, type: 3}
     soundEffects:
     - loop: 1
@@ -1942,7 +1958,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 5247186827344228106}
+  - targets:
+    - objectTarget: {fileID: 5247186827344228106}
+      targetStep: 9
     narateAudio: {fileID: 8300000, guid: a02783d40675ab146b894f35d90dcd01, type: 3}
     soundEffects:
     - loop: 1
@@ -1968,7 +1986,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 2123634695}
+  - targets:
+    - objectTarget: {fileID: 2123634695}
+      targetStep: 10
     narateAudio: {fileID: 8300000, guid: 72bf11bc82ccbaf4bbe0c9c45df1dae2, type: 3}
     soundEffects:
     - loop: 1
@@ -1994,7 +2014,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 5247186827344228106}
+  - targets:
+    - objectTarget: {fileID: 5247186827344228106}
+      targetStep: 11
     narateAudio: {fileID: 8300000, guid: fbf049eae2757eb4fb667b4dd67fcbb3, type: 3}
     soundEffects:
     - loop: 1
@@ -2017,7 +2039,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 2123634695}
+  - targets:
+    - objectTarget: {fileID: 2123634695}
+      targetStep: 12
     narateAudio: {fileID: 0}
     soundEffects:
     - loop: 1

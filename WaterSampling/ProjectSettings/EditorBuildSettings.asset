@@ -29,12 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Composite.unity
     guid: 40496cc0b545f574a99879117e7f19e5
-  - enabled: 1
-    path: Assets/Scenes/Composite NoCattails.unity
-    guid: c3c6428822235004c8e74dff820b1238
-  - enabled: 1
-    path: Assets/Scenes/Composite WaterPlane.unity
-    guid: 3caea3893e0a1cf4b80b156aade52fc9
   - enabled: 0
     path: Assets/Scenes/SliderTesting.unity
     guid: d1d18d907f96bd242a5c18a2892878ee
