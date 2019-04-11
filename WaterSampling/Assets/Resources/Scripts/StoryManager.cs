@@ -32,8 +32,8 @@ public class StoryManager : MonoBehaviour {
     public AudioClip outroAudio;
     [SerializeField]
     public SoundEffect backgroundAudioStart;
-    [SerializeField]
-    public GameObject slider;
+    //[SerializeField]
+    //public GameObject slider;
 
     [SerializeField]
     public Step[] steps;
@@ -50,7 +50,7 @@ public class StoryManager : MonoBehaviour {
         public AudioClip missTap;
         [SerializeField]
         public int stepOrder;
-        //These variables are for object manipulation using a slider, not being used right now and probably going to a be replaced with a two-axis dragging system
+        //These variables are for object manipulation using a slider, not being used right now and might be replaced with a two-axis dragging system
         /*[SerializeField]
         public TapOrDrag tapOrDrag;
         [SerializeField]
@@ -158,6 +158,9 @@ public class StoryManager : MonoBehaviour {
                                 AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
                                 for (int j = 1; j < audioSources.Length; j++) {
                                     Destroy(audioSources[j]);
+                                }
+                                foreach (Highlight highlight in elem.highlights) {
+                                    highlight.highlightTarget.GetComponent<Animator>().Play("New State");
                                 }
                                 if (target.targetAnim != null) {
                                     //play the animation for the step
