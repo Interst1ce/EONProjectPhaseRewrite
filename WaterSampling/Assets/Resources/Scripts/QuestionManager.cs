@@ -27,12 +27,17 @@ public class QuestionManager : MonoBehaviour
         answerLayouts.Add(GameObject.Find("AnswerLayout2"));
         answerLayouts.Add(GameObject.Find("AnswerLayout3"));
         answerLayouts.Add(GameObject.Find("AnswerLayout4"));
-        audioSource = new AudioSource();
-        audioSource.clip = buttonSound;
+        if(buttonSound != null) {
+            audioSource = new AudioSource();
+            audioSource.clip = buttonSound;
+        }
     }
 
     private void Start() {
-       qAPanel.SetActive(false);
+        foreach(GameObject gameObject in answerLayouts) {
+            gameObject.SetActive(false);
+        }
+        qAPanel.SetActive(false);
     }
 
     public void Question() {
@@ -51,18 +56,21 @@ public class QuestionManager : MonoBehaviour
         switch (choices.Length) {
             case 2:
                 foreach (Transform child in answerLayouts[0].transform) {
+                    answerLayouts[0].SetActive(true);
                     textToBeFaded.Add(child.GetChild(0).GetComponent<TextMeshProUGUI>());
                     imageToBeFaded.Add(child.GetComponent<Image>());
                 }
                 break;
             case 3:
                 foreach (Transform child in answerLayouts[1].transform) {
+                    answerLayouts[1].SetActive(true);
                     textToBeFaded.Add(child.GetChild(0).GetComponent<TextMeshProUGUI>());
                     imageToBeFaded.Add(child.GetComponent<Image>());
                 }
                 break;
             case 4:
                 foreach (Transform child in answerLayouts[2].transform) {
+                    answerLayouts[2].SetActive(true);
                     textToBeFaded.Add(child.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>());
                     imageToBeFaded.Add(child.gameObject.GetComponent<Image>());
                 }
@@ -115,9 +123,11 @@ public class QuestionManager : MonoBehaviour
     public void CheckAnswer(int choice) {
         audioSource.Play();
         if(choice == answer) {
-            AudioSource correct = new AudioSource();
-            correct.clip = correctSound;
-            correct.Play();
+            if(correctSound != null) {
+                AudioSource correct = new AudioSource();
+                correct.clip = correctSound;
+                correct.Play();
+            }
             StartCoroutine(FadeUI(1));
             Invoke("DisableUI",1);
         }

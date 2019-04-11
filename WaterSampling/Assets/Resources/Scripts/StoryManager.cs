@@ -46,7 +46,7 @@ public class StoryManager : MonoBehaviour {
     [System.Serializable]
     public class Step : object {
         [SerializeField]
-        public GameObject objectTarget;
+        public Target[] targets;
         [SerializeField]
         public AudioClip narateAudio;
         [SerializeField]
@@ -80,6 +80,7 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public Question question;        
     }
+
     [System.Serializable]
     public class Question : object {
         [SerializeField]
@@ -90,6 +91,15 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public int correctChoice;
     }
+
+    [System.Serializable]
+    public class Target : object {
+        [SerializeField]
+        public GameObject objectTarget;
+        [SerializeField]
+        public int targetStep;
+    }
+
 
     [System.Serializable]
     public class SoundEffect : object {
@@ -133,54 +143,56 @@ public class StoryManager : MonoBehaviour {
                 if (Physics.Raycast(ray,out hit)) {
                     //GameObject.Find("TextMeshPro Text").GetComponent<TextMeshProUGUI>().text = hit.transform.gameObject.name;
                     foreach (Step elem in steps) {
-                        if (hit.transform.gameObject == elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
-                            currentStep++;
-                            AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
-                            for(int j = 1; j < audioSources.Length; j++) {
-                                Destroy(audioSources[j]);
-                            }
-                            if (elem.animClip != null) {
-                                //play the animation for the step
-                                //maybe update for next sprint multiple animations to play in sequence
-                                hit.transform.gameObject.GetComponent<Animator>().Play(elem.animClip.name);
-                            }
-                            if (elem.narateAudio != null) {
-                                //play audio for the step
-                                PlayAudio(elem.narateAudio);
-                            }
-                            if (elem.soundEffects != null) {
-                                PlaySoundEffects(elem.soundEffects);
-                            }
-                            if (elem.hasSlider) {
-                                if (!slider.activeSelf) {
-                                    //activate slider and add an EventListener that calls CheckSlider(Step) everytime the slider value changes
-                                    slider.SetActive(true);
-                                    slider.GetComponent<Slider>().onValueChanged.AddListener(delegate { CheckSlider(elem); });
-                                } else {
-                                    slider.SetActive(false);
+                        foreach(Target target in elem.targets) {
+                            if (hit.transform.gameObject == target.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying && !audioSource.loop) {
+                                currentStep = target.targetStep;
+                                AudioSource[] audioSources = gameObject.GetComponents<AudioSource>();
+                                for (int j = 1; j < audioSources.Length; j++) {
+                                    Destroy(audioSources[j]);
                                 }
-                            } 
-                            if (elem.hasQuestion) {
-                                //send necessary data to the QuestionManager and call Question()
-                                qAPanel.GetComponent<QuestionManager>().question = elem.question.question;
-                                qAPanel.GetComponent<QuestionManager>().choices = elem.question.choices;
-                                qAPanel.GetComponent<QuestionManager>().answer = elem.question.correctChoice;
+                                if (elem.animClip != null) {
+                                    //play the animation for the step
+                                    //maybe update for next sprint multiple animations to play in sequence
+                                    hit.transform.gameObject.GetComponent<Animator>().Play(elem.animClip.name);
+                                }
                                 if (elem.narateAudio != null) {
-                                    if (elem.animClip != null) {
-                                        if(elem.narateAudio.length > elem.animClip.length) {
-                                            Invoke("CallQuestion",elem.narateAudio.length);
-                                        } else {
-                                            Invoke("CallQuestion",elem.animClip.length);
-                                        }
-                                    }
-                                    Invoke("CallQuestion",elem.narateAudio.length);
-                                } else if(elem.animClip != null) {
-                                    Invoke("CallQuestion",elem.animClip.length);
+                                    //play audio for the step
+                                    PlayAudio(elem.narateAudio);
                                 }
-                                CallQuestion();
+                                if (elem.soundEffects != null) {
+                                    PlaySoundEffects(elem.soundEffects);
+                                }
+                                if (elem.hasSlider) {
+                                    if (!slider.activeSelf) {
+                                        //activate slider and add an EventListener that calls CheckSlider(Step) everytime the slider value changes
+                                        slider.SetActive(true);
+                                        //slider.GetComponent<Slider>().onValueChanged.AddListener(delegate { CheckSlider(elem); });
+                                    } else {
+                                        slider.SetActive(false);
+                                    }
+                                }
+                                if (elem.hasQuestion) {
+                                    //send necessary data to the QuestionManager and call Question()
+                                    qAPanel.GetComponent<QuestionManager>().question = elem.question.question;
+                                    qAPanel.GetComponent<QuestionManager>().choices = elem.question.choices;
+                                    qAPanel.GetComponent<QuestionManager>().answer = elem.question.correctChoice;
+                                    if (elem.narateAudio != null) {
+                                        if (elem.animClip != null) {
+                                            if (elem.narateAudio.length > elem.animClip.length) {
+                                                Invoke("CallQuestion",elem.narateAudio.length);
+                                            } else {
+                                                Invoke("CallQuestion",elem.animClip.length);
+                                            }
+                                        }
+                                        Invoke("CallQuestion",elem.narateAudio.length);
+                                    } else if (elem.animClip != null) {
+                                        Invoke("CallQuestion",elem.animClip.length);
+                                    }
+                                    CallQuestion();
+                                }
+                            } else if (hit.transform.gameObject != target.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
+                                PlayAudio(elem.missTap);
                             }
-                        } else if (hit.transform.gameObject != elem.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
-                            PlayAudio(elem.missTap);
                         }
                     }
                 }
@@ -238,15 +250,16 @@ public class StoryManager : MonoBehaviour {
         }
     }
 
+    //UPDATE TO WORK WITH MULTIPLE TARGETS
     //adjusts the position/rotation/scale of the object along one axis depending on the value of the slider.
-    public void CheckSlider(Step elem) {
-        Vector3 p = elem.objectTarget.transform.localPosition;
-        Quaternion r = elem.objectTarget.transform.localRotation;
-        Vector3 s = elem.objectTarget.transform.localScale;
+    /*public void CheckSlider(Step step) {
+        Vector3 p = step.targets.objectTarget.transform.localPosition;
+        Quaternion r = step.targets.objectTarget.transform.localRotation;
+        Vector3 s = step.targets.objectTarget.transform.localScale;
         float sliderMultiply = slider.GetComponent<Slider>().value * elem.manipulationMultiplier;
-        switch (elem.manipulationType) {
+        switch (step.manipulationType) {
             case ManipulationType.Transform:
-                switch (elem.manipulationAxis) {
+                switch (step.manipulationAxis) {
                     case ManipulationAxis.X:
                         p.x = sliderMultiply;
                         break;
@@ -287,5 +300,5 @@ public class StoryManager : MonoBehaviour {
                 }
                 break;
         }
-    }
+    }*/
 }

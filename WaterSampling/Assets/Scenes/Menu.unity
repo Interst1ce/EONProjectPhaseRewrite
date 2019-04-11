@@ -2598,16 +2598,13 @@ MonoBehaviour:
   chapterTitles:
   - Grab Sampling Tutorial
   - Composite Sampling Tutorial
-  - Alternate Composite Sampling Tutorial
   chapterSummaries:
   - Learn the basics of Grab Sampling
-  - Learn the basics of Composite Sampling
   - Learn the basics of Composite Sampling
   chapterSprites:
   - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
   - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
-  - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
-  chapterScenes: 060000000800000009000000
+  chapterScenes: 0600000007000000
 --- !u!222 &1409647020
 CanvasRenderer:
   m_ObjectHideFlags: 0

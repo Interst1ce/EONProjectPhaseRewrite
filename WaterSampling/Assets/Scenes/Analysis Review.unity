@@ -520,6 +520,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_Name
@@ -579,16 +589,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[4]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2661953587329213317, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -2580,7 +2580,9 @@ MonoBehaviour:
     delay: 0
   slider: {fileID: 0}
   steps:
-  - objectTarget: {fileID: 1652731954}
+  - targets:
+    - objectTarget: {fileID: 1652731954}
+      targetStep: 1
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
@@ -2612,7 +2614,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 517210782}
+  - targets:
+    - objectTarget: {fileID: 517210782}
+      targetStep: 2
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
@@ -2635,7 +2639,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 123484976}
+  - targets:
+    - objectTarget: {fileID: 123484976}
+      targetStep: 3
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
@@ -2661,7 +2667,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 517210782}
+  - targets:
+    - objectTarget: {fileID: 517210782}
+      targetStep: 4
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
@@ -2684,7 +2692,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 517210782}
+  - targets:
+    - objectTarget: {fileID: 517210782}
+      targetStep: 5
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
@@ -2707,7 +2717,9 @@ MonoBehaviour:
       question: 
       choices: []
       correctChoice: 0
-  - objectTarget: {fileID: 517210782}
+  - targets:
+    - objectTarget: {fileID: 517210782}
+      targetStep: 6
     narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
