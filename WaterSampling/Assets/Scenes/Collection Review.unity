@@ -2645,23 +2645,15 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 7984357573954297623}
       targetStep: 1
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 9af7cc2862ad9764cb722ba1d89cb45c, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 9af7cc2862ad9764cb722ba1d89cb45c, type: 2}
     stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2670,7 +2662,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 1652766366}
       targetStep: 2
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 4b36eba7399e2ff4aab8dcc4fe384fb8, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
@@ -2678,18 +2671,9 @@ MonoBehaviour:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 1.3
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 4b36eba7399e2ff4aab8dcc4fe384fb8, type: 2}
     stepOrder: 1
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2698,7 +2682,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 7984357573954297616}
       targetStep: 3
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 6e1cd93267256944bbe54a7abad0a744, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2706,18 +2691,9 @@ MonoBehaviour:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 75173503c87f28347a5125d297011a35, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 6e1cd93267256944bbe54a7abad0a744, type: 2}
     stepOrder: 2
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2726,7 +2702,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 7984357573954297616}
       targetStep: 4
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: fde5ee6c679b87d4991de4e2cca99013, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
@@ -2734,18 +2711,9 @@ MonoBehaviour:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: fde5ee6c679b87d4991de4e2cca99013, type: 2}
     stepOrder: 3
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2754,7 +2722,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 511655155}
       targetStep: 5
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 2e82a5265037fdc48a6e0e74881143d5, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: bbbeb3a408f9d4e49beaa9175e83c544, type: 3}
@@ -2762,18 +2731,9 @@ MonoBehaviour:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 2e82a5265037fdc48a6e0e74881143d5, type: 2}
     stepOrder: 4
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2782,7 +2742,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 511655159}
       targetStep: 6
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 50e737c5dd35f7d41b2162be142a32ac, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
@@ -2790,18 +2751,9 @@ MonoBehaviour:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 50e737c5dd35f7d41b2162be142a32ac, type: 2}
     stepOrder: 5
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2810,23 +2762,15 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 511655159}
       targetStep: 7
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 3d1995dfa85b16f4b877b7f8b9ce0690, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 3d1995dfa85b16f4b877b7f8b9ce0690, type: 2}
     stepOrder: 6
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2835,7 +2779,8 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 511655155}
       targetStep: 8
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 9eecc4bd24f84804f868f243a8f4edaa, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: bbbeb3a408f9d4e49beaa9175e83c544, type: 3}
@@ -2843,18 +2788,9 @@ MonoBehaviour:
     - loop: 1
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 9eecc4bd24f84804f868f243a8f4edaa, type: 2}
     stepOrder: 7
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2863,23 +2799,15 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 7984357573954297616}
       targetStep: 9
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: c220f620bbd6cba418a368e4efa8f85f, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 0}
       delay: 0
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: c220f620bbd6cba418a368e4efa8f85f, type: 2}
     stepOrder: 8
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 
@@ -2888,23 +2816,15 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 7984357573954297623}
       targetStep: 10
-    narateAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAnim: {fileID: 7400000, guid: 009f91ee4be87cd49ac23def17ba9515, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
       delay: 0.8
+    highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
-    animClip: {fileID: 7400000, guid: 009f91ee4be87cd49ac23def17ba9515, type: 2}
     stepOrder: 9
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
     hasQuestion: 0
     question:
       question: 

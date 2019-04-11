@@ -131,6 +131,10 @@ public class StoryManager : MonoBehaviour {
                 PlayAudio(outroAudio);
                 Invoke("CallPause",outroAudio.length);
             }
+            else
+            {
+                CallPause(); 
+            }
         }
         if (!audioSource.isPlaying && introPlayed) {
             if(currentStep <= steps.Length - 1) {
