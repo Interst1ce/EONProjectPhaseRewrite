@@ -29,16 +29,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Composite.unity
     guid: 40496cc0b545f574a99879117e7f19e5
-  - enabled: 0
-    path: Assets/Scenes/SliderTesting.unity
-    guid: d1d18d907f96bd242a5c18a2892878ee
-  - enabled: 0
-    path: Assets/Scenes/VuforiaTemplate.unity
-    guid: ab64ab0dd423d3d419475d0b1d9bd445
   - enabled: 1
     path: Assets/Scenes/Grab Review.unity
     guid: 3cb9245fe0858bd4586aa045be715418
   - enabled: 1
     path: Assets/Scenes/Composite Review.unity
     guid: d7812de6445ec6040862e28ad8090438
+  - enabled: 1
+    path: Assets/Scenes/Things to know.unity
+    guid: 82cbf8433272b22418c2b7dbcd59eb1f
+  - enabled: 0
+    path: Assets/Scenes/SliderTesting.unity
+    guid: d1d18d907f96bd242a5c18a2892878ee
+  - enabled: 0
+    path: Assets/Scenes/VuforiaTemplate.unity
+    guid: ab64ab0dd423d3d419475d0b1d9bd445
   m_configObjects: {}
