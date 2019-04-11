@@ -32,8 +32,8 @@ public class StoryManager : MonoBehaviour {
     public AudioClip outroAudio;
     [SerializeField]
     public SoundEffect backgroundAudioStart;
-    [SerializeField]
-    public GameObject slider;
+    //[SerializeField]
+    //public GameObject slider;
 
     [SerializeField]
     public Step[] steps;
