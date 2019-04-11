@@ -1663,12 +1663,12 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3353160390322442605}
       targetStep: 1
-    narateAudio: {fileID: 8300000, guid: f1f84f6e39fadb5489d2737863c5f96c, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
       delay: 0
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: dc8dd7ac69de78b43bfb75905822242c, type: 2}
     stepOrder: 0
     highlightThis: {fileID: 7400000, guid: f5cd465b7e2283340b027d669ce0df96, type: 2}
@@ -1688,12 +1688,12 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3353160390322442603}
       targetStep: 2
-    narateAudio: {fileID: 8300000, guid: 22b94eff006122345a09fb4694ead931, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
       delay: 0.8
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 6244afa3162432641a2771b54d2d027e, type: 2}
     stepOrder: 1
     highlightThis: {fileID: 7400000, guid: 755f0d69d46ad88428543fbba4d94ab5, type: 2}
@@ -1713,9 +1713,9 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 5293597297685132702}
       targetStep: 3
-    narateAudio: {fileID: 8300000, guid: b7177b7011d9b614e871d754fcd857b8, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects: []
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 49610a7e5ec59054ba2b16c480d99118, type: 2}
     stepOrder: 2
     highlightThis: {fileID: 7400000, guid: d1d4d920d218b3e4e8ce877f6790d961, type: 2}
@@ -1735,12 +1735,12 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3353160390322442605}
       targetStep: 4
-    narateAudio: {fileID: 8300000, guid: cd0757d70da3c714098ad8c8453cbce2, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
       delay: 0.5
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 32756b625d68f2e44a7908fef20002c1, type: 2}
     stepOrder: 3
     highlightThis: {fileID: 7400000, guid: e048d5ea7a0cdd44cbb1c77d546afc83, type: 2}
@@ -1760,9 +1760,9 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3353160390322442601}
       targetStep: 5
-    narateAudio: {fileID: 8300000, guid: 0ecb25a8c8b7a1a4aaf49adb3d9d54de, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects: []
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: bedb409f75808be41930cbf5f51ae249, type: 2}
     stepOrder: 4
     highlightThis: {fileID: 7400000, guid: 06a015952b91b4e4ab38ece5c0ca4809, type: 2}
@@ -1782,12 +1782,12 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3636387985646979409}
       targetStep: 6
-    narateAudio: {fileID: 8300000, guid: 3341eb9501703354b809f2d7613364b6, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: f85b8c4ddc598924995a0beb43b6eaf7, type: 3}
       delay: 0
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: ce95c92e335d2db449dcab9a8368e5af, type: 2}
     stepOrder: 5
     highlightThis: {fileID: 7400000, guid: 884cce34ee057ef4cb059125e5e0bef6, type: 2}
@@ -1807,9 +1807,9 @@ MonoBehaviour:
   - targets:
     - objectTarget: {fileID: 3353160390322442601}
       targetStep: 7
-    narateAudio: {fileID: 8300000, guid: dfff9ba2868a64141a284644a4d2e40c, type: 3}
+    narateAudio: {fileID: 0}
     soundEffects: []
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 30b8843920f727e42a29fe5461f7da3a, type: 2}
     stepOrder: 6
     highlightThis: {fileID: 7400000, guid: bb71f85983889ae4790893fad44e9704, type: 2}
@@ -1834,7 +1834,7 @@ MonoBehaviour:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: f85b8c4ddc598924995a0beb43b6eaf7, type: 3}
       delay: 1
-    missTap: {fileID: 0}
+    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     animClip: {fileID: 7400000, guid: 2460a085f941e5c4ba1bcffa630660c6, type: 2}
     stepOrder: 7
     highlightThis: {fileID: 7400000, guid: 42701da244926104997a8fe8e210b521, type: 2}

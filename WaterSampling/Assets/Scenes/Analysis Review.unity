@@ -523,13 +523,13 @@ PrefabInstance:
     - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: toToggle.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: toToggle.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 778629826}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_Name
@@ -731,6 +731,12 @@ MonoBehaviour:
   clipB: {fileID: 7400000, guid: 479544875708bb641b220c0baaf78896, type: 2}
   clipAA: {fileID: 7400000, guid: 778c83d2ffcf11d428a097814cdafcb8, type: 2}
   steptoactivate: 4
+--- !u!1 &778629826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2017543125678740901, guid: e3515be5cc7c2ec4bbb524296990844a,
+    type: 3}
+  m_PrefabInstance: {fileID: 248224054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &818339943
 GameObject:
   m_ObjectHideFlags: 0

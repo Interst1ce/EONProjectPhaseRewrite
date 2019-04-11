@@ -1092,6 +1092,8 @@ MonoBehaviour:
   choices: []
   textToBeFaded: []
   imageToBeFaded: []
+  buttonSound: {fileID: 8300000, guid: 9226f0684031e79408b41bcb3ecc7fdc, type: 3}
+  correctSound: {fileID: 0}
 --- !u!1 &3122138373871028338
 GameObject:
   m_ObjectHideFlags: 0

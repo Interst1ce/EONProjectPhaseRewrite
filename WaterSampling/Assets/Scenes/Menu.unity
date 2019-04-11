@@ -2002,7 +2002,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20.35
+  m_fontSize: 22.3
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2598,13 +2598,19 @@ MonoBehaviour:
   chapterTitles:
   - Grab Sampling Tutorial
   - Composite Sampling Tutorial
+  - Grab Sampling Review
+  - Composite Sampling Review
   chapterSummaries:
   - Learn the basics of Grab Sampling
   - Learn the basics of Composite Sampling
+  - Review the basics of Grab Sampling
+  - Review the basics of Composite Sampling
   chapterSprites:
+  - {fileID: 21300000, guid: 5c2de3328c945da49ab420ff012b5f93, type: 3}
   - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
-  - {fileID: 21300000, guid: cfaf03fcd8f9b8c438e98548594846bf, type: 3}
-  chapterScenes: 0600000007000000
+  - {fileID: 21300000, guid: 909e6cb4da60e8b4b95527909881b711, type: 3}
+  - {fileID: 21300000, guid: 909e6cb4da60e8b4b95527909881b711, type: 3}
+  chapterScenes: 06000000070000000800000009000000
 --- !u!222 &1409647020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3178,7 +3184,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 69.55
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3895,7 +3901,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20.35
+  m_fontSize: 22.3
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -28,7 +28,7 @@ public class QuestionManager : MonoBehaviour
         answerLayouts.Add(GameObject.Find("AnswerLayout3"));
         answerLayouts.Add(GameObject.Find("AnswerLayout4"));
         if(buttonSound != null) {
-            audioSource = new AudioSource();
+            audioSource = qAPanel.AddComponent<AudioSource>();
             audioSource.clip = buttonSound;
         }
     }
@@ -124,7 +124,7 @@ public class QuestionManager : MonoBehaviour
         audioSource.Play();
         if(choice == answer) {
             if(correctSound != null) {
-                AudioSource correct = new AudioSource();
+                AudioSource correct = qAPanel.AddComponent<AudioSource>();
                 correct.clip = correctSound;
                 correct.Play();
             }
