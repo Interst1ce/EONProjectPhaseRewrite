@@ -13,18 +13,16 @@ public class PauseMenu : MonoBehaviour {
     TextMeshProUGUI chapterTitle;
 
     public void Pause() {
-        foreach(GameObject gameObject in toToggle)
-        {
-            if(gameObject.name == "ChapterTitle")
-            {
+        foreach (GameObject gameObject in toToggle) {
+            if (gameObject.name == "ChapterTitle") {
                 chapterTitle = gameObject.GetComponentInChildren<TextMeshProUGUI>();
             }
         }
         chapterTitle.text = SceneManager.GetActiveScene().name;
 
         AudioListener.pause = !AudioListener.pause;
-        foreach(GameObject elem in toToggle) {
+        foreach (GameObject elem in toToggle) {
             elem.SetActive(!elem.activeSelf);
         }
-     }
+    }
 }

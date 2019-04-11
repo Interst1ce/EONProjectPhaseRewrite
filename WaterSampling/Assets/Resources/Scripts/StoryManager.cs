@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor;
-using TMPro;
-using Vuforia;
 
 public class StoryManager : MonoBehaviour {
 
@@ -48,20 +43,15 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public Target[] targets;
         [SerializeField]
-        public AudioClip narateAudio;
-        [SerializeField]
         public SoundEffect[] soundEffects;
+        [SerializeField]
+        public Highlight[] highlights;
         [SerializeField]
         public AudioClip missTap;
         [SerializeField]
-        public AnimationClip animClip;
-        [SerializeField]
         public int stepOrder;
-        [SerializeField]
-        public AnimationClip highlightThis;
-        [SerializeField]
-        public GameObject highlightTarget;
-        [SerializeField]
+        //These variables are for object manipulation using a slider, not being used right now and probably going to a be replaced with a two-axis dragging system
+        /*[SerializeField]
         public TapOrDrag tapOrDrag;
         [SerializeField]
         public bool hasSlider;
@@ -74,7 +64,7 @@ public class StoryManager : MonoBehaviour {
         [SerializeField]
         public ManipulationAxis manipulationAxis;
         [SerializeField]
-        public float manipulationMultiplier;
+        public float manipulationMultiplier;*/
         [SerializeField]
         public bool hasQuestion;
         [SerializeField]
@@ -98,6 +88,10 @@ public class StoryManager : MonoBehaviour {
         public GameObject objectTarget;
         [SerializeField]
         public int targetStep;
+        [SerializeField]
+        public AnimationClip targetAnim;
+        [SerializeField]
+        public AudioClip targetAudio;
     }
 
 
@@ -109,6 +103,14 @@ public class StoryManager : MonoBehaviour {
         public AudioClip soundEffect;
         [SerializeField]
         public float delay;
+    }
+
+    [System.Serializable]
+    public class Highlight : object {
+        [SerializeField]
+        public AnimationClip highlightAnim;
+        [SerializeField]
+        public GameObject highlightTarget;
     }
 
     public void Awake() {
@@ -125,14 +127,17 @@ public class StoryManager : MonoBehaviour {
     public void Update() {
         if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf) {
             finished = true;
-            //PlayAudio(outroAudio);
-            GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
-            GameObject.Find("PlayButton").SetActive(false);
+            if (outroAudio != null) {
+                PlayAudio(outroAudio);
+                Invoke("CallPause",outroAudio.length);
+            }
         }
         if (!audioSource.isPlaying && introPlayed) {
             if(currentStep <= steps.Length - 1) {
-                if (steps[currentStep].highlightThis != null) {
-                    steps[currentStep].highlightTarget.gameObject.GetComponent<Animator>().Play(steps[currentStep].highlightThis.name);
+                if (steps[currentStep].highlights != null) {
+                    foreach(Highlight highlight in steps[currentStep].highlights) {
+                        highlight.highlightTarget.GetComponent<Animator>().Play(highlight.highlightAnim.name);
+                    }
                 }
             }   
         }
@@ -150,43 +155,43 @@ public class StoryManager : MonoBehaviour {
                                 for (int j = 1; j < audioSources.Length; j++) {
                                     Destroy(audioSources[j]);
                                 }
-                                if (elem.animClip != null) {
+                                if (target.targetAnim != null) {
                                     //play the animation for the step
                                     //maybe update for next sprint multiple animations to play in sequence
-                                    hit.transform.gameObject.GetComponent<Animator>().Play(elem.animClip.name);
+                                    hit.transform.gameObject.GetComponent<Animator>().Play(target.targetAnim.name);
                                 }
-                                if (elem.narateAudio != null) {
+                                if (target.targetAudio != null) {
                                     //play audio for the step
-                                    PlayAudio(elem.narateAudio);
+                                    PlayAudio(target.targetAudio);
                                 }
                                 if (elem.soundEffects != null) {
                                     PlaySoundEffects(elem.soundEffects);
                                 }
-                                if (elem.hasSlider) {
+                                /*if (elem.hasSlider) {
                                     if (!slider.activeSelf) {
                                         //activate slider and add an EventListener that calls CheckSlider(Step) everytime the slider value changes
                                         slider.SetActive(true);
-                                        //slider.GetComponent<Slider>().onValueChanged.AddListener(delegate { CheckSlider(elem); });
+                                        slider.GetComponent<Slider>().onValueChanged.AddListener(delegate { CheckSlider(elem); });
                                     } else {
                                         slider.SetActive(false);
                                     }
-                                }
+                                }*/
                                 if (elem.hasQuestion) {
                                     //send necessary data to the QuestionManager and call Question()
                                     qAPanel.GetComponent<QuestionManager>().question = elem.question.question;
                                     qAPanel.GetComponent<QuestionManager>().choices = elem.question.choices;
                                     qAPanel.GetComponent<QuestionManager>().answer = elem.question.correctChoice;
-                                    if (elem.narateAudio != null) {
-                                        if (elem.animClip != null) {
-                                            if (elem.narateAudio.length > elem.animClip.length) {
-                                                Invoke("CallQuestion",elem.narateAudio.length);
+                                    if (target.targetAudio != null) {
+                                        if (target.targetAnim != null) {
+                                            if (target.targetAudio.length > target.targetAnim.length) {
+                                                Invoke("CallQuestion",target.targetAudio.length);
                                             } else {
-                                                Invoke("CallQuestion",elem.animClip.length);
+                                                Invoke("CallQuestion",target.targetAnim.length);
                                             }
                                         }
-                                        Invoke("CallQuestion",elem.narateAudio.length);
-                                    } else if (elem.animClip != null) {
-                                        Invoke("CallQuestion",elem.animClip.length);
+                                        Invoke("CallQuestion",target.targetAudio.length);
+                                    } else if (target.targetAnim != null) {
+                                        Invoke("CallQuestion",target.targetAnim.length);
                                     }
                                     CallQuestion();
                                 }
@@ -198,6 +203,11 @@ public class StoryManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void CallPause() {
+        GameObject.Find("PauseUI").GetComponent<PauseMenu>().Pause();
+        GameObject.Find("PlayButton").SetActive(false);
     }
 
     public void CallQuestion() {

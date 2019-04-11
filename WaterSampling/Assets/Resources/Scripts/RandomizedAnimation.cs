@@ -26,12 +26,12 @@ public class RandomizedAnimation : MonoBehaviour {
             isrunning = true;
             randomint = Random.Range(0,4);
             if (randomint == 3) {
-                storymanager.steps[storymanager.currentStep + 1].animClip = clipA;
-                storymanager.steps[storymanager.currentStep + 2].animClip = clipAA;
+                storymanager.steps[storymanager.currentStep + 1].targets[0].targetAnim = clipA;
+                storymanager.steps[storymanager.currentStep + 2].targets[0].targetAnim = clipAA;
                 storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 0;
             }
             if (randomint < 3) {
-                storymanager.steps[storymanager.currentStep + 1].animClip = clipB;
+                storymanager.steps[storymanager.currentStep + 1].targets[0].targetAnim = clipB;
                 storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 1;
             }
 
