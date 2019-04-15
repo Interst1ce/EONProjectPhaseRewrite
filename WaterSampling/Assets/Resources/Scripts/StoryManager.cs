@@ -26,12 +26,14 @@ public class StoryManager : MonoBehaviour {
     public int currentStep;
     private bool introPlayed = false;
     private bool finished = false;
+    public int pauseDelay=0;
     [SerializeField]
     public AudioClip introAudio;
     [SerializeField]
     public AudioClip outroAudio;
     [SerializeField]
     public SoundEffect backgroundAudioStart;
+
     //[SerializeField]
     //public GameObject slider;
 
@@ -125,16 +127,17 @@ public class StoryManager : MonoBehaviour {
     }
 
     public void Update() {
-        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf) {
+        if (currentStep == steps.Length && !audioSource.isPlaying && finished == false && !qAPanel.activeSelf ) {
             finished = true;
-            if (outroAudio != null) {
+            //if (outroAudio != null)
+            //{
                 PlayAudio(outroAudio);
-                Invoke("CallPause",outroAudio.length);
-            }
-            else
-            {
-                CallPause(); 
-            }
+                StartCoroutine(ExecuteAfterTime(pauseDelay));
+            //}
+           // else
+            //{
+            //    CallPause();
+           // }
         }
         if (!audioSource.isPlaying && introPlayed) {
             if(currentStep <= steps.Length - 1) {
@@ -210,6 +213,14 @@ public class StoryManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        //Invoke("CallPause", outroAudio.length);
+        CallPause();
+
     }
 
     public void CallPause() {
