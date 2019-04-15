@@ -22,17 +22,17 @@ public class RandomizedAnimation : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (storymanager.currentStep + 1 == steptoactivate && isrunning == false) {
+        if (storymanager.currentStep + 2 == steptoactivate && isrunning == false) {
             isrunning = true;
             randomint = Random.Range(0,4);
             if (randomint == 3) {
-                storymanager.steps[storymanager.currentStep + 1].targets[0].targetAnim = clipA;
-                storymanager.steps[storymanager.currentStep + 2].targets[0].targetAnim = clipAA;
-                storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 0;
+                storymanager.steps[storymanager.currentStep + 2].targets[0].targetAnim = clipA;
+                storymanager.steps[storymanager.currentStep + 3].targets[0].targetAnim = clipAA;
+                storymanager.steps[storymanager.currentStep + 3].question.correctChoice = 0;
             }
             if (randomint < 3) {
-                storymanager.steps[storymanager.currentStep + 1].targets[0].targetAnim = clipB;
-                storymanager.steps[storymanager.currentStep + 2].question.correctChoice = 1;
+                storymanager.steps[storymanager.currentStep + 2].targets[0].targetAnim = clipB;
+                storymanager.steps[storymanager.currentStep + 3].question.correctChoice = 1;
             }
 
 
