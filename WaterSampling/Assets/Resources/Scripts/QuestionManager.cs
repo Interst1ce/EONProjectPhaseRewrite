@@ -40,13 +40,14 @@ public class QuestionManager : MonoBehaviour
         qAPanel.SetActive(false);
     }
 
-    public void Question() {
+    public void Question(float delay) {
         qAPanel.SetActive(true);
-        StartCoroutine(FadeUI(1,true));
+        StartCoroutine(FadeUI(1,delay,true));
     }
 
     //FadeUI coroutine
-    IEnumerator FadeUI(float targetTime, bool fadeIn = false) {
+    IEnumerator FadeUI(float targetTime, float delay = 0, bool fadeIn = false) {
+        Debug.Log("Coroutine Started");
         textToBeFaded.Add(questionPanel.GetComponentInChildren<TextMeshProUGUI>());
         imageToBeFaded.Add(qAPanel.GetComponent<Image>());
         imageToBeFaded.Add(questionPanel.GetComponent<Image>());
@@ -90,7 +91,14 @@ public class QuestionManager : MonoBehaviour
             }
         }
 
-        while(elapsedTime < targetTime) {
+        if(delay > 0) {
+            while (elapsedTime < delay) {
+                elapsedTime++;
+                yield return null;
+            }
+        }
+
+        while(elapsedTime < targetTime + delay) {
             if (fadeIn){
                 foreach (TextMeshProUGUI elem in textToBeFaded) {
                     elem.color = new Color(0,0,0,Mathf.Lerp(0,1,(elapsedTime / targetTime)));

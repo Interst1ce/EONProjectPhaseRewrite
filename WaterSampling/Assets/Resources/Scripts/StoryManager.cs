@@ -191,16 +191,16 @@ public class StoryManager : MonoBehaviour {
                                     if (target.targetAudio != null) {
                                         if (target.targetAnim != null) {
                                             if (target.targetAudio.length > target.targetAnim.length) {
-                                                Invoke("CallQuestion",target.targetAudio.length);
+                                                CallQuestion(target.targetAudio.length);
                                             } else {
-                                                Invoke("CallQuestion",target.targetAnim.length);
+                                                CallQuestion(target.targetAnim.length);
                                             }
                                         }
-                                        Invoke("CallQuestion",target.targetAudio.length);
+                                        CallQuestion(target.targetAudio.length);
                                     } else if (target.targetAnim != null) {
-                                        Invoke("CallQuestion",target.targetAnim.length);
+                                        CallQuestion(target.targetAnim.length);
                                     }
-                                    CallQuestion();
+                                    CallQuestion(0);
                                 }
                             } else if (hit.transform.gameObject != target.objectTarget && currentStep == elem.stepOrder && !audioSource.isPlaying) {
                                 PlayAudio(elem.missTap);
@@ -217,8 +217,8 @@ public class StoryManager : MonoBehaviour {
         GameObject.Find("PlayButton").SetActive(false);
     }
 
-    public void CallQuestion() {
-        qAPanel.GetComponent<QuestionManager>().Question();
+    public void CallQuestion(float delay) {
+        qAPanel.GetComponent<QuestionManager>().Question(delay);
     }
 
     public void PlayAudio(AudioClip audio) {
