@@ -276,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283971280}
   - component: {fileID: 283971281}
+  - component: {fileID: 283971282}
   m_Layer: 0
   m_Name: 500_mL_Jar (Plastic)
   m_TagString: Untagged
@@ -318,6 +319,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &283971282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283971279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.25, z: 0.1}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &318775160
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950397752}
   - component: {fileID: 950397753}
+  - component: {fileID: 950397754}
   m_Layer: 0
   m_Name: 500_mL_Jar (Amber)
   m_TagString: Untagged
@@ -693,6 +708,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &950397754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950397751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.25, z: 0.1}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &1296661859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,11 +1484,11 @@ MonoBehaviour:
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     - objectTarget: {fileID: 283971279}
-      targetStep: 7
+      targetStep: 9
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     - objectTarget: {fileID: 950397751}
-      targetStep: 13
+      targetStep: 17
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
@@ -1508,7 +1536,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 4
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1522,7 +1550,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 5
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1536,7 +1564,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1550,7 +1578,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 7
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1564,7 +1592,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 8
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1578,7 +1606,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1592,7 +1620,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 10
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1607,10 +1635,10 @@ MonoBehaviour:
       targetStep: 11
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
       targetAudio: {fileID: 0}
-    - objectTarget: {fileID: 283971279}
+    - objectTarget: {fileID: 950397751}
       targetStep: 14
-      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 0}
+      targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1624,7 +1652,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 12
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1638,7 +1666,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 13
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1652,7 +1680,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1666,7 +1694,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 15
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1680,7 +1708,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 16
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1692,9 +1720,9 @@ MonoBehaviour:
       correctChoice: 0
   - targets:
     - objectTarget: {fileID: 1864240761607120875}
-      targetStep: 17
+      targetStep: 26
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1708,7 +1736,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 18
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1726,7 +1754,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 22
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1740,7 +1768,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 20
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1754,7 +1782,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 21
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1768,7 +1796,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1782,7 +1810,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 23
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1796,7 +1824,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 24
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1808,9 +1836,9 @@ MonoBehaviour:
       correctChoice: 0
   - targets:
     - objectTarget: {fileID: 1864240761607120875}
-      targetStep: 25
+      targetStep: 26
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -2107,6 +2135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864240761606962123}
   - component: {fileID: 1864240761607120876}
+  - component: {fileID: 1864240761607120877}
   m_Layer: 0
   m_Name: 500_mL_Jar (Glass)
   m_TagString: Untagged
@@ -2133,6 +2162,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1864240761607120877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864240761607120875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.25, z: 0.1}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &1864240761607120879
 GameObject:
   m_ObjectHideFlags: 0
