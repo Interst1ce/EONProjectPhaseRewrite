@@ -1449,169 +1449,382 @@ MonoBehaviour:
     loop: 0
     soundEffect: {fileID: 0}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
-    - objectTarget: {fileID: 0}
-      targetStep: 0
-    - objectTarget: {fileID: 0}
-      targetStep: 0
-    - objectTarget: {fileID: 0}
-      targetStep: 0
-    narateAudio: {fileID: 0}
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 1
+      targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+    - objectTarget: {fileID: 283971279}
+      targetStep: 7
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+    - objectTarget: {fileID: 950397751}
+      targetStep: 13
+      targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
+    highlights: []
     missTap: {fileID: 0}
-    animClip: {fileID: 0}
     stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 2
+      targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 1
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 3
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+    - objectTarget: {fileID: 950397751}
+      targetStep: 6
+      targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 2
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 4
+      targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 3
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 5
+      targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 4
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 26
+      targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 5
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 7
+      targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 6
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 8
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 7
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 26
+      targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 8
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 10
+      targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 9
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 11
+      targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
+      targetAudio: {fileID: 0}
+    - objectTarget: {fileID: 283971279}
+      targetStep: 14
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 10
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 12
+      targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 11
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 13
+      targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 12
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 26
+      targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 13
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 15
+      targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 14
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 16
+      targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 15
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 17
+      targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 16
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 950397751}
+      targetStep: 18
+      targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 17
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 19
+      targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
+      targetAudio: {fileID: 0}
+    - objectTarget: {fileID: 283971279}
+      targetStep: 22
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 18
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 20
+      targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 19
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 21
+      targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 20
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 26
+      targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 21
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 283971279}
+      targetStep: 23
+      targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 22
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 24
+      targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 23
+    hasQuestion: 0
+    question:
+      question: 
+      choices: []
+      correctChoice: 0
+  - targets:
+    - objectTarget: {fileID: 1864240761607120875}
+      targetStep: 25
+      targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
+      targetAudio: {fileID: 0}
+    soundEffects: []
+    highlights: []
+    missTap: {fileID: 0}
+    stepOrder: 24
     hasQuestion: 0
     question:
       question: 
       choices: []
       correctChoice: 0
   - targets: []
-    narateAudio: {fileID: 0}
     soundEffects: []
+    highlights: []
     missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
-    hasQuestion: 0
-    question:
-      question: 
-      choices: []
-      correctChoice: 0
-  - targets: []
-    narateAudio: {fileID: 0}
-    soundEffects: []
-    missTap: {fileID: 0}
-    animClip: {fileID: 0}
-    stepOrder: 0
-    highlightThis: {fileID: 0}
-    highlightTarget: {fileID: 0}
-    tapOrDrag: 0
-    hasSlider: 0
-    sliderTarget: 0
-    manipulateObject: 0
-    manipulationType: 0
-    manipulationAxis: 0
-    manipulationMultiplier: 0
+    stepOrder: 25
     hasQuestion: 0
     question:
       question: 

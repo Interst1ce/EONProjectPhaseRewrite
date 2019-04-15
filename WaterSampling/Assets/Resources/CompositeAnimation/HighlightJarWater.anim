@@ -31,7 +31,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -48,11 +48,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
+      value: {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
     - time: 0.5
-      value: {fileID: 2100000, guid: cc32a193e5cfd78478c78b0d9d4b6ec6, type: 2}
+      value: {fileID: 2100000, guid: 176c321e4b48f214aaace1effb1f3d4e, type: 2}
     - time: 1
-      value: {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
+      value: {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Bottle
     classID: 23
@@ -97,9 +97,9 @@ AnimationClip:
       customType: 21
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
-    - {fileID: 2100000, guid: cc32a193e5cfd78478c78b0d9d4b6ec6, type: 2}
-    - {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
+    - {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
+    - {fileID: 2100000, guid: 176c321e4b48f214aaace1effb1f3d4e, type: 2}
+    - {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
     - {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
     - {fileID: 2100000, guid: 787d7229ffe4423429b85716cbb17635, type: 2}
     - {fileID: 2100000, guid: f931d3b511a4765499724c3c9e873b5d, type: 2}
@@ -138,7 +138,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
