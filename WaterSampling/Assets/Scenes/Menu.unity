@@ -1557,11 +1557,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterTitles:
   - Things To Know
+  - Chain of Custody
   chapterSummaries:
   - Basic Knowledge of Sampling
+  - Basic Knowledge of COC
   chapterSprites:
-  - {fileID: 0}
-  chapterScenes: 0a000000
+  - {fileID: 21300000, guid: 470afe02c90db3842be1ccaa5afb3a6e, type: 3}
+  - {fileID: 21300000, guid: 925133131eb3cfd419a501aa8e30bf89, type: 3}
+  chapterScenes: 0a0000000b000000
 --- !u!222 &855986499
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2005,7 +2008,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 26.15
+  m_fontSize: 22.3
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3904,7 +3907,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 26.15
+  m_fontSize: 22.3
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
