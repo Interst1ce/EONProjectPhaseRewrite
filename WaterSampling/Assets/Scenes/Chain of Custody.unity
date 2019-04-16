@@ -1495,7 +1495,7 @@ MonoBehaviour:
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
-    stepOrder: 0
+    stepOrder: 1
     hasQuestion: 0
     question:
       question: 
@@ -1511,7 +1511,7 @@ MonoBehaviour:
     - highlightAnim: {fileID: 7400000, guid: 42701da244926104997a8fe8e210b521, type: 2}
       highlightTarget: {fileID: 3636387985646979409}
     missTap: {fileID: 0}
-    stepOrder: 0
+    stepOrder: 2
     hasQuestion: 0
     question:
       question: 
@@ -1527,7 +1527,7 @@ MonoBehaviour:
     - highlightAnim: {fileID: 7400000, guid: bb71f85983889ae4790893fad44e9704, type: 2}
       highlightTarget: {fileID: 3353160390322442601}
     missTap: {fileID: 0}
-    stepOrder: 0
+    stepOrder: 3
     hasQuestion: 0
     question:
       question: 
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     - highlightAnim: {fileID: 7400000, guid: 42701da244926104997a8fe8e210b521, type: 2}
       highlightTarget: {fileID: 3636387985646979409}
     missTap: {fileID: 0}
-    stepOrder: 0
+    stepOrder: 4
     hasQuestion: 0
     question:
       question: 
