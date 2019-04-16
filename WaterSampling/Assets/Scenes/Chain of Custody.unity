@@ -1508,7 +1508,7 @@ MonoBehaviour:
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
     highlights:
-    - highlightAnim: {fileID: 7400000, guid: 42701da244926104997a8fe8e210b521, type: 2}
+    - highlightAnim: {fileID: 7400000, guid: 884cce34ee057ef4cb059125e5e0bef6, type: 2}
       highlightTarget: {fileID: 3636387985646979409}
     missTap: {fileID: 0}
     stepOrder: 2
@@ -1535,7 +1535,7 @@ MonoBehaviour:
       correctChoice: 0
   - targets:
     - objectTarget: {fileID: 3636387985646979409}
-      targetStep: 0
+      targetStep: 5
       targetAnim: {fileID: 7400000, guid: 2460a085f941e5c4ba1bcffa630660c6, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     soundEffects: []
