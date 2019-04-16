@@ -1560,7 +1560,7 @@ MonoBehaviour:
   chapterSummaries:
   - Basic Knowledge of Sampling
   chapterSprites:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 470afe02c90db3842be1ccaa5afb3a6e, type: 3}
   chapterScenes: 0a000000
 --- !u!222 &855986499
 CanvasRenderer:
@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 26.15
+  m_fontSize: 40.1
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3904,7 +3904,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 26.15
+  m_fontSize: 40.1
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
