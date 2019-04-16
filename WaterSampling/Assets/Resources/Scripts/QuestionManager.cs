@@ -93,7 +93,7 @@ public class QuestionManager : MonoBehaviour
 
         if(delay > 0) {
             while (elapsedTime < delay) {
-                elapsedTime++;
+                elapsedTime += Time.deltaTime;
                 yield return null;
             }
         }
