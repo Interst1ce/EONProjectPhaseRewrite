@@ -35,9 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Composite Review.unity
     guid: d7812de6445ec6040862e28ad8090438
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Things to know.unity
+    guid: 82cbf8433272b22418c2b7dbcd59eb1f
   - enabled: 1
     path: Assets/Scenes/Chain of Custody.unity
     guid: 6cd746a67465def4090160d3eafeffda
