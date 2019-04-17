@@ -1757,7 +1757,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: aa5bc2a6434c973479e4a0a442b1e0b4, type: 2}
       highlightTarget: {fileID: 9010644316912662406}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 0
     hasQuestion: 0
     question:
@@ -1782,7 +1782,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 1cac1889fd8e78c4f88a9dc01f0ab012, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 1
     hasQuestion: 0
     question:
@@ -1804,7 +1804,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 269f114e5bfa3b44f91d824fdc1d8350, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 2
     hasQuestion: 0
     question:
@@ -1826,7 +1826,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 1cac1889fd8e78c4f88a9dc01f0ab012, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 3
     hasQuestion: 0
     question:
@@ -1848,7 +1848,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 580848300f3d4374ca04c6789b88f8f1, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 4
     hasQuestion: 0
     question:
@@ -1870,7 +1870,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: f8d5952287c384445bc5693b0df30b92, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 5
     hasQuestion: 0
     question:
@@ -1892,7 +1892,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 6
     hasQuestion: 0
     question:
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 7
     hasQuestion: 0
     question:
@@ -1936,7 +1936,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 93782926669ef5943a22d7b95477f7de, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 8
     hasQuestion: 0
     question:
@@ -1958,7 +1958,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 43c34edac20aa4f4081ae86a0bdd800c, type: 2}
       highlightTarget: {fileID: 2123634695}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 9
     hasQuestion: 0
     question:
@@ -1977,7 +1977,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: e28a20c21eab7ee43b598810ef23ebde, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 10
     hasQuestion: 0
     question:
