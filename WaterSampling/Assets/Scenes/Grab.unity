@@ -1327,30 +1327,30 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3515be5cc7c2ec4bbb524296990844a, type: 3}
@@ -1657,7 +1657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
-  pauseDelay: 0
+  pauseDelay: 2
   introAudio: {fileID: 8300000, guid: 635b506a88389344296a22a82a641d51, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
@@ -1672,7 +1672,7 @@ MonoBehaviour:
       targetAudio: {fileID: 8300000, guid: f1f84f6e39fadb5489d2737863c5f96c, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
+      soundEffect: {fileID: 8300000, guid: 0ce2316760ef313479a54ba8546a9ae7, type: 3}
       delay: 0
     highlights:
     - highlightAnim: {fileID: 7400000, guid: f5cd465b7e2283340b027d669ce0df96, type: 2}
@@ -1691,7 +1691,7 @@ MonoBehaviour:
       targetAudio: {fileID: 8300000, guid: 22b94eff006122345a09fb4694ead931, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
+      soundEffect: {fileID: 8300000, guid: 3e0235d05664ceb49b84d24813edb4d3, type: 3}
       delay: 0.8
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 755f0d69d46ad88428543fbba4d94ab5, type: 2}
@@ -1726,7 +1726,7 @@ MonoBehaviour:
       targetAudio: {fileID: 8300000, guid: cd0757d70da3c714098ad8c8453cbce2, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
+      soundEffect: {fileID: 8300000, guid: 0ce2316760ef313479a54ba8546a9ae7, type: 3}
       delay: 0.5
     highlights:
     - highlightAnim: {fileID: 7400000, guid: e048d5ea7a0cdd44cbb1c77d546afc83, type: 2}
@@ -1761,7 +1761,7 @@ MonoBehaviour:
       targetAudio: {fileID: 8300000, guid: 3341eb9501703354b809f2d7613364b6, type: 3}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: f85b8c4ddc598924995a0beb43b6eaf7, type: 3}
+      soundEffect: {fileID: 8300000, guid: cf4525d7b9dc4694ba8e3bce9e30130b, type: 3}
       delay: 0
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 884cce34ee057ef4cb059125e5e0bef6, type: 2}
@@ -1796,7 +1796,7 @@ MonoBehaviour:
       targetAudio: {fileID: 0}
     soundEffects:
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: f85b8c4ddc598924995a0beb43b6eaf7, type: 3}
+      soundEffect: {fileID: 8300000, guid: cf4525d7b9dc4694ba8e3bce9e30130b, type: 3}
       delay: 1
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 42701da244926104997a8fe8e210b521, type: 2}

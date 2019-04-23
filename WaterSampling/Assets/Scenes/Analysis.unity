@@ -2035,14 +2035,24 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
+    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
+      propertyPath: m_isInputParsingRequired
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6741974508668839739, guid: e3515be5cc7c2ec4bbb524296990844a,
+    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_havePropertiesChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4626356269210021885, guid: e3515be5cc7c2ec4bbb524296990844a,
@@ -2090,6 +2100,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2017543125678740901, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741974508668839739, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7957052781499213534, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2120,25 +2140,25 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
+    - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
-      propertyPath: m_isInputParsingRequired
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_inputSource
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
+    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515724329520959969, guid: e3515be5cc7c2ec4bbb524296990844a,
+    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6532181305719238257, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -2206,26 +2226,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 535026715147106373, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2017543125678740901, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_inputSource
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478022263193613053, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -2433,13 +2433,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
+  pauseDelay: 2
   introAudio: {fileID: 8300000, guid: 22acefb8f976edc4ab28f9660f856b03, type: 3}
   outroAudio: {fileID: 8300000, guid: d468561728d632847bc0608c2c800dfd, type: 3}
   backgroundAudioStart:
     loop: 0
     soundEffect: {fileID: 0}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
     - objectTarget: {fileID: 1652731954}
