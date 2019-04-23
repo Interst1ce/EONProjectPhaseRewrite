@@ -1049,31 +1049,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseUI
       objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[4]
-      value: 
-      objectReference: {fileID: 1809722659}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[4]
-      value: 
-      objectReference: {fileID: 1809722659}
-    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
-        type: 3}
-      propertyPath: toToggle.Array.data[5]
-      value: 
-      objectReference: {fileID: 1228560653}
     - target: {fileID: 8350884585525758968, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1179,6 +1154,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
+      objectReference: {fileID: 1809722659}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[4]
+      value: 
+      objectReference: {fileID: 1809722659}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[5]
+      value: 
+      objectReference: {fileID: 1228560653}
     - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -1843,7 +1843,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
       delay: 0
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
+      soundEffect: {fileID: 8300000, guid: 779142ca1146fcf4f9cbe95135ba127a, type: 3}
       delay: 0
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 580848300f3d4374ca04c6789b88f8f1, type: 2}
@@ -1887,7 +1887,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
       delay: 0
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
+      soundEffect: {fileID: 8300000, guid: 2faaccdd50f4ca24e8328a2dbbafe3b8, type: 3}
       delay: 0
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
@@ -1909,7 +1909,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
       delay: 0
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: c9b2a897eb332cc40bb367bb5d219a94, type: 3}
+      soundEffect: {fileID: 8300000, guid: 9bf5697a23080334cbfbe947affc15e3, type: 3}
       delay: 1
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
@@ -1931,7 +1931,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
       delay: 0
     - loop: 0
-      soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
+      soundEffect: {fileID: 8300000, guid: 779142ca1146fcf4f9cbe95135ba127a, type: 3}
       delay: 1
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 93782926669ef5943a22d7b95477f7de, type: 2}

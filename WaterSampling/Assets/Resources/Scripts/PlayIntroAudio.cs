@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
-
+//Placed in the Image target
 public class PlayIntroAudio : MonoBehaviour, ITrackableEventHandler
 {
     private TrackableBehaviour mTrackableBehaviour;
@@ -20,6 +20,7 @@ public class PlayIntroAudio : MonoBehaviour, ITrackableEventHandler
                                     TrackableBehaviour.Status previousStatus,
                                     TrackableBehaviour.Status newStatus)
     {
+        //if the camera sees the image taget then this
         if (newStatus == TrackableBehaviour.Status.DETECTED ||
             newStatus == TrackableBehaviour.Status.TRACKED ||
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
