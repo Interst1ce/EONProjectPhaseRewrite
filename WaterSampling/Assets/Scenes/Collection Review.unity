@@ -2634,13 +2634,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
+  pauseDelay: 2
   introAudio: {fileID: 8300000, guid: 7a366ea139a48914ab3498082836cb8f, type: 3}
   outroAudio: {fileID: 8300000, guid: 1df7e01521aed48439f10a6561e4db35, type: 3}
   backgroundAudioStart:
     loop: 0
     soundEffect: {fileID: 0}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
     - objectTarget: {fileID: 7984357573954297623}

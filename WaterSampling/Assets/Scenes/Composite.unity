@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
-  pauseDelay: 0
+  pauseDelay: 2
   introAudio: {fileID: 8300000, guid: e1549ec00ce3b8e4899191be99234235, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
