@@ -1723,13 +1723,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
+  pauseDelay: 0
   introAudio: {fileID: 8300000, guid: e1549ec00ce3b8e4899191be99234235, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
     loop: 1
     soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
     - objectTarget: {fileID: 9010644316912662406}
@@ -2259,7 +2259,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
+  - {fileID: 2100000, guid: fe895f070dce3f14d804d1589bc7508d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

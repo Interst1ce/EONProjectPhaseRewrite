@@ -486,6 +486,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1828339747}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1228560653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6741974508668839739, guid: e3515be5cc7c2ec4bbb524296990844a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625874511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273371182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,12 +1052,12 @@ PrefabInstance:
     - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: toToggle.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: toToggle.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
@@ -1063,6 +1069,11 @@ PrefabInstance:
       propertyPath: toToggle.Array.data[4]
       value: 
       objectReference: {fileID: 1809722659}
+    - target: {fileID: 1816010646465743327, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: toToggle.Array.data[5]
+      value: 
+      objectReference: {fileID: 1228560653}
     - target: {fileID: 8350884585525758968, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1171,7 +1182,7 @@ PrefabInstance:
     - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3515be5cc7c2ec4bbb524296990844a, type: 3}
@@ -1723,13 +1734,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
+  pauseDelay: 0
   introAudio: {fileID: 8300000, guid: e1549ec00ce3b8e4899191be99234235, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
     loop: 1
     soundEffect: {fileID: 8300000, guid: 78b4293abb7cb744599bbfcb0afb8fa0, type: 3}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
     - objectTarget: {fileID: 9010644316912662406}
@@ -1746,7 +1757,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: aa5bc2a6434c973479e4a0a442b1e0b4, type: 2}
       highlightTarget: {fileID: 9010644316912662406}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 0
     hasQuestion: 0
     question:
@@ -1771,7 +1782,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 1cac1889fd8e78c4f88a9dc01f0ab012, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 1
     hasQuestion: 0
     question:
@@ -1793,7 +1804,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 269f114e5bfa3b44f91d824fdc1d8350, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 2
     hasQuestion: 0
     question:
@@ -1815,7 +1826,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 1cac1889fd8e78c4f88a9dc01f0ab012, type: 2}
       highlightTarget: {fileID: 7212921644170123322}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 3
     hasQuestion: 0
     question:
@@ -1837,7 +1848,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 580848300f3d4374ca04c6789b88f8f1, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 4
     hasQuestion: 0
     question:
@@ -1859,7 +1870,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: f8d5952287c384445bc5693b0df30b92, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 5
     hasQuestion: 0
     question:
@@ -1881,7 +1892,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 6
     hasQuestion: 0
     question:
@@ -1903,7 +1914,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 3680292b0c4ad4f4ab4f3dbac9b0045f, type: 2}
       highlightTarget: {fileID: 1273371182}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 7
     hasQuestion: 0
     question:
@@ -1925,7 +1936,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 93782926669ef5943a22d7b95477f7de, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 8
     hasQuestion: 0
     question:
@@ -1947,7 +1958,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 43c34edac20aa4f4081ae86a0bdd800c, type: 2}
       highlightTarget: {fileID: 2123634695}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 9
     hasQuestion: 0
     question:
@@ -1966,7 +1977,7 @@ MonoBehaviour:
     highlights:
     - highlightAnim: {fileID: 7400000, guid: e28a20c21eab7ee43b598810ef23ebde, type: 2}
       highlightTarget: {fileID: 5247186827344228106}
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 0}
     stepOrder: 10
     hasQuestion: 0
     question:
@@ -2283,7 +2294,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70c1f8013fccdbd4882fcc74ac51cf63, type: 2}
+  - {fileID: 2100000, guid: fe895f070dce3f14d804d1589bc7508d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

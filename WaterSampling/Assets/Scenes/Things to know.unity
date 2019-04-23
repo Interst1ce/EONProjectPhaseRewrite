@@ -1492,7 +1492,10 @@ MonoBehaviour:
       targetStep: 17
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 0
@@ -1506,7 +1509,10 @@ MonoBehaviour:
       targetStep: 2
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 1
@@ -1524,7 +1530,10 @@ MonoBehaviour:
       targetStep: 6
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 2
@@ -1538,7 +1547,10 @@ MonoBehaviour:
       targetStep: 4
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 3
@@ -1552,7 +1564,10 @@ MonoBehaviour:
       targetStep: 5
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 4
@@ -1566,7 +1581,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 5
@@ -1580,7 +1598,10 @@ MonoBehaviour:
       targetStep: 7
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 6
@@ -1594,7 +1615,10 @@ MonoBehaviour:
       targetStep: 8
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 7
@@ -1608,7 +1632,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 8
@@ -1622,7 +1649,10 @@ MonoBehaviour:
       targetStep: 10
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 9
@@ -1635,12 +1665,15 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 11
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 0}
+      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
     - objectTarget: {fileID: 950397751}
       targetStep: 14
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 10
@@ -1654,7 +1687,10 @@ MonoBehaviour:
       targetStep: 12
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 11
@@ -1668,7 +1704,10 @@ MonoBehaviour:
       targetStep: 13
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 12
@@ -1682,7 +1721,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 13
@@ -1696,7 +1738,10 @@ MonoBehaviour:
       targetStep: 15
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 14
@@ -1710,7 +1755,10 @@ MonoBehaviour:
       targetStep: 16
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 15
@@ -1724,7 +1772,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 16
@@ -1738,7 +1789,10 @@ MonoBehaviour:
       targetStep: 18
       targetAnim: {fileID: 7400000, guid: f109cf79f5ef49b429ccda1e115f8fc7, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 17
@@ -1756,7 +1810,10 @@ MonoBehaviour:
       targetStep: 22
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 18
@@ -1770,7 +1827,10 @@ MonoBehaviour:
       targetStep: 20
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 19
@@ -1784,7 +1844,10 @@ MonoBehaviour:
       targetStep: 21
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 20
@@ -1798,7 +1861,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 21
@@ -1812,7 +1878,10 @@ MonoBehaviour:
       targetStep: 23
       targetAnim: {fileID: 7400000, guid: b2631edf1b155eb47b3a693b982ce678, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 22
@@ -1826,7 +1895,10 @@ MonoBehaviour:
       targetStep: 24
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 23
@@ -1840,7 +1912,10 @@ MonoBehaviour:
       targetStep: 26
       targetAnim: {fileID: 7400000, guid: 87f0e2079d9a6fd43801fc728029b80e, type: 2}
       targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
-    soundEffects: []
+    soundEffects:
+    - loop: 0
+      soundEffect: {fileID: 8300000, guid: d6160620161ebc448b16d005ca05c1e9, type: 3}
+      delay: 0
     highlights: []
     missTap: {fileID: 0}
     stepOrder: 24

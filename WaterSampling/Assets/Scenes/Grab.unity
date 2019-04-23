@@ -118,13 +118,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 569474823}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &160854843
+--- !u!43 &191646488
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh47142
+  m_Name: ImageTargetMesh17610
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -512,6 +512,34 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 73bef7833c6921340af6f3e69beb2c70, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5e38a1e30fc1914ba9b1fb8e86328cd, type: 3}
+--- !u!21 &663484794
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Object_Tracker001Material
+
+    17620'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8c0d36e2a95d44babc5bb440b0dbd7a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &818339943
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +848,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f652ed5c450e544297727aa319d403c, type: 2}
+  - {fileID: 2100000, guid: e2808f64508fdbc4c93d9d66b053ad68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -848,34 +876,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056001968}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1276418590
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Object_Tracker001Material
-
-    47152'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8c0d36e2a95d44babc5bb440b0dbd7a1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1294023140
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f652ed5c450e544297727aa319d403c, type: 2}
+  - {fileID: 2100000, guid: 8f63d435475d2cc43b8156c60a210cee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1327,6 +1327,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2570058097640321065, guid: e3515be5cc7c2ec4bbb524296990844a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 519435829346862458, guid: e3515be5cc7c2ec4bbb524296990844a,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -1384,7 +1389,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860176662}
-  m_Mesh: {fileID: 160854843}
+  m_Mesh: {fileID: 191646488}
 --- !u!23 &1860176664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1402,7 +1407,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1276418590}
+  - {fileID: 663484794}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1652,13 +1657,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStep: 0
+  pauseDelay: 0
   introAudio: {fileID: 8300000, guid: 635b506a88389344296a22a82a641d51, type: 3}
   outroAudio: {fileID: 0}
   backgroundAudioStart:
     loop: 0
     soundEffect: {fileID: 0}
     delay: 0
-  slider: {fileID: 0}
   steps:
   - targets:
     - objectTarget: {fileID: 3353160390322442605}
