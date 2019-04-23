@@ -2692,7 +2692,7 @@ MonoBehaviour:
     highlights: []
     missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
     stepOrder: 5
-    hasQuestion: 1
+    hasQuestion: 0
     question:
       question: Is this water safe?
       choices:
