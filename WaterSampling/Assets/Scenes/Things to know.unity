@@ -1472,8 +1472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStep: 0
   pauseDelay: 1
-  introAudio: {fileID: 0}
-  outroAudio: {fileID: 0}
+  introAudio: {fileID: 8300000, guid: 76d86098b42945949b7a1923f5915952, type: 3}
+  outroAudio: {fileID: 8300000, guid: 9e633b22b0a54674f8a3c665f66815ff, type: 3}
   backgroundAudioStart:
     loop: 0
     soundEffect: {fileID: 0}
@@ -1483,15 +1483,15 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 1
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 2fb3283a642f39e4592714ef14290576, type: 3}
     - objectTarget: {fileID: 283971279}
       targetStep: 9
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 04c3d8d4719a5b94ab43ceb7553b8016, type: 3}
     - objectTarget: {fileID: 950397751}
       targetStep: 17
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: b3f1e181222d9e941982063addf3034f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1525,11 +1525,11 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 3
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 04c3d8d4719a5b94ab43ceb7553b8016, type: 3}
     - objectTarget: {fileID: 950397751}
       targetStep: 6
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: b3f1e181222d9e941982063addf3034f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1563,7 +1563,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 5
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: b3f1e181222d9e941982063addf3034f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1614,7 +1614,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 8
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 04c3d8d4719a5b94ab43ceb7553b8016, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1665,7 +1665,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 11
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 2fb3283a642f39e4592714ef14290576, type: 3}
     - objectTarget: {fileID: 950397751}
       targetStep: 14
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
@@ -1703,7 +1703,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 950397751}
       targetStep: 13
       targetAnim: {fileID: 7400000, guid: 9412fbed26a25e840a6106f1da9bec00, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: b3f1e181222d9e941982063addf3034f, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1754,7 +1754,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 16
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 2fb3283a642f39e4592714ef14290576, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1809,7 +1809,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 22
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 04c3d8d4719a5b94ab43ceb7553b8016, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1843,7 +1843,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 283971279}
       targetStep: 21
       targetAnim: {fileID: 7400000, guid: fbcaae5b966ce33418adf1b4e48de452, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 04c3d8d4719a5b94ab43ceb7553b8016, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}
@@ -1894,7 +1894,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 1864240761607120875}
       targetStep: 24
       targetAnim: {fileID: 7400000, guid: 0f08e0af239ae074bace5bb80bebedcf, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 2fb3283a642f39e4592714ef14290576, type: 3}
     soundEffects:
     - loop: 0
       soundEffect: {fileID: 8300000, guid: c5fc8b565b5db9a41ac2fe11a29e3894, type: 3}

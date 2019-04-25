@@ -1492,8 +1492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStep: 0
   pauseDelay: 2
-  introAudio: {fileID: 0}
-  outroAudio: {fileID: 0}
+  introAudio: {fileID: 8300000, guid: e63819f232ef8424cbd3591103f61b3e, type: 3}
+  outroAudio: {fileID: 8300000, guid: 91ad4177d8bc24749b5cc552401dba2d, type: 3}
   backgroundAudioStart:
     loop: 0
     soundEffect: {fileID: 0}
@@ -1503,7 +1503,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 3353160390322442601}
       targetStep: 1
       targetAnim: {fileID: 7400000, guid: 08edfefb6f183c74cb11f3f99c1437c4, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 822a7a85b666cdf4b86922b9076d3049, type: 3}
     soundEffects: []
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 06a015952b91b4e4ab38ece5c0ca4809, type: 2}
@@ -1519,7 +1519,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 3353160390322442601}
       targetStep: 2
       targetAnim: {fileID: 7400000, guid: 01558399a568be04e9f7ccacc693f0a2, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: 71fbc51a9dadf1943961b5c09ee41d2e, type: 3}
     soundEffects: []
     highlights: []
     missTap: {fileID: 0}
@@ -1533,7 +1533,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 3636387985646979409}
       targetStep: 3
       targetAnim: {fileID: 7400000, guid: ce95c92e335d2db449dcab9a8368e5af, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: c12b5ccbe6388ff4983acce8419c8d8b, type: 3}
     soundEffects: []
     highlights:
     - highlightAnim: {fileID: 7400000, guid: 884cce34ee057ef4cb059125e5e0bef6, type: 2}
@@ -1549,7 +1549,7 @@ MonoBehaviour:
     - objectTarget: {fileID: 3353160390322442601}
       targetStep: 4
       targetAnim: {fileID: 7400000, guid: 30b8843920f727e42a29fe5461f7da3a, type: 2}
-      targetAudio: {fileID: 8300000, guid: f2ffa4618517c544fb7e5814d808a625, type: 3}
+      targetAudio: {fileID: 8300000, guid: c468644c2de6eb64a91b0534e74034b1, type: 3}
     soundEffects: []
     highlights:
     - highlightAnim: {fileID: 7400000, guid: bb71f85983889ae4790893fad44e9704, type: 2}
