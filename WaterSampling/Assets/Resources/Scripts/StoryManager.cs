@@ -131,8 +131,18 @@ public class StoryManager : MonoBehaviour {
             finished = true;
             //if (outroAudio != null)
             //{
+            if (outroAudio != null)
+            {
                 PlayAudio(outroAudio);
+                if (!audioSource.isPlaying)
+                {
+                    CallPause();
+                }
+            }
+            else{
                 StartCoroutine(ExecuteAfterTime(pauseDelay));
+            }
+
             //}
            // else
             //{

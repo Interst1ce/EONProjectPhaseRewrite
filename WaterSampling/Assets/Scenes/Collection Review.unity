@@ -2635,7 +2635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStep: 0
   pauseDelay: 2
-  introAudio: {fileID: 8300000, guid: 7a366ea139a48914ab3498082836cb8f, type: 3}
+  introAudio: {fileID: 8300000, guid: cf29ae849a8132a4f85a5f104a995608, type: 3}
   outroAudio: {fileID: 8300000, guid: 1df7e01521aed48439f10a6561e4db35, type: 3}
   backgroundAudioStart:
     loop: 0
@@ -2652,7 +2652,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 0
     hasQuestion: 0
     question:
@@ -2672,7 +2672,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 1.3
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 1
     hasQuestion: 0
     question:
@@ -2692,7 +2692,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 75173503c87f28347a5125d297011a35, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 2
     hasQuestion: 0
     question:
@@ -2712,7 +2712,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 3
     hasQuestion: 0
     question:
@@ -2732,7 +2732,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 4
     hasQuestion: 0
     question:
@@ -2752,7 +2752,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 5
     hasQuestion: 0
     question:
@@ -2769,7 +2769,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 6
     hasQuestion: 0
     question:
@@ -2789,7 +2789,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 2c7a26c4d4f6ea54f98192cff6df5fda, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 7
     hasQuestion: 0
     question:
@@ -2806,7 +2806,7 @@ MonoBehaviour:
       soundEffect: {fileID: 0}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 8
     hasQuestion: 0
     question:
@@ -2823,7 +2823,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 0c3dc3edce43844489776dba1227f638, type: 3}
       delay: 0.8
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 3b6d90061c30f6b4da2c6071ad4762a8, type: 3}
     stepOrder: 9
     hasQuestion: 0
     question:
