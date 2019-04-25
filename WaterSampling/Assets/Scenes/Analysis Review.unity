@@ -2579,7 +2579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStep: 0
   pauseDelay: 2
-  introAudio: {fileID: 8300000, guid: dadbbe4dc54ffbb418a8e795ab76e0c9, type: 3}
+  introAudio: {fileID: 8300000, guid: 49ad6f05390ca9f47bd11606477f9f6e, type: 3}
   outroAudio: {fileID: 8300000, guid: df02e5e622d0a694daeecfbe6781895e, type: 3}
   backgroundAudioStart:
     loop: 0
@@ -2605,7 +2605,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 97090f01f2c0d27489d18ea49e3e837f, type: 3}
       delay: 3.3
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 0
     hasQuestion: 0
     question:
@@ -2622,7 +2622,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 1959e908365d82543a3c93fdd4b93726, type: 3}
       delay: 0
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 1
     hasQuestion: 0
     question:
@@ -2642,7 +2642,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 678a8daaa0339cf4086dbf951e79a22f, type: 3}
       delay: 1.6
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 2
     hasQuestion: 0
     question:
@@ -2659,7 +2659,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 5f894e342f1b41e4981916052809cb7d, type: 3}
       delay: 0.8
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 3
     hasQuestion: 0
     question:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 9fa575456032b344999d3ed5b6403003, type: 3}
       delay: 0.4
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 4
     hasQuestion: 0
     question:
@@ -2690,7 +2690,7 @@ MonoBehaviour:
       targetAudio: {fileID: 0}
     soundEffects: []
     highlights: []
-    missTap: {fileID: 8300000, guid: 762ac72f2f5eb6f4da5655f7d76da630, type: 3}
+    missTap: {fileID: 8300000, guid: 87dfbac5b9f59a54fac08b54e7636546, type: 3}
     stepOrder: 5
     hasQuestion: 0
     question:
