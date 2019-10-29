@@ -87,6 +87,9 @@ public class TextManager : MonoBehaviour {
             //if on second page
             moreChapters.GetComponent<Button>().interactable = false;
             prevChapters.GetComponent<Button>().interactable = true;
+        } else {
+            moreChapters.GetComponent<Button>().interactable = false;
+            prevChapters.GetComponent<Button>().interactable = false;
         }
         //fades out any UI elements to be updated, updates the UI, fades back in
         StartCoroutine(Fade(new Color(1,1,1,1),0.5f));
@@ -127,7 +130,7 @@ public class TextManager : MonoBehaviour {
             //if going back chapters
         } else {
             lowerIndex = 0;
-            upperIndex = 2;
+            upperIndex = chapterTitles.Length;
         }
     }
 
@@ -170,20 +173,25 @@ public class TextManager : MonoBehaviour {
         //elapsedTime needed to keep track of time from when the function is called to the target fade time
         float elapsedTime = 0;
 
-        //fade UI out
+        #region FadeOut
         while (elapsedTime < time) {
             //fades the alpha channel from the color value given down to 0 over the given float time
             chapter1Title.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter2Title.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter3Title.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
             chapter1Summary.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter2Summary.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter3Summary.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
             //0.31764f is hardcoded to keep track of sprite color
             chapter1Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter2Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,0,(elapsedTime / time)));
-            chapter3Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,0,(elapsedTime / time)));
 
+            if (chapter2Title.color.a != 0) {
+                chapter2Title.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+                chapter2Summary.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+                chapter2Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+            }
+            if(chapter3Title.color.a != 0) {
+                chapter3Title.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+                chapter3Summary.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+                chapter3Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,0,(elapsedTime / time)));
+            }
+            
             //update elapsed time
             elapsedTime += Time.deltaTime;
             yield return null;
@@ -199,6 +207,7 @@ public class TextManager : MonoBehaviour {
         chapter1Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
         chapter2Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
         chapter3Sprite.color = new Color(0.3176471f,0.3176471f,0.3176471f,0);
+        #endregion
 
         //reset elapsedTime so that the UI can fade back in
         elapsedTime = 0;
@@ -210,13 +219,14 @@ public class TextManager : MonoBehaviour {
         List<TextMeshProUGUI> tTFI = new List<TextMeshProUGUI>();
         List<Image> iTFI = new List<Image>();
 
+        #region UpdateButtons
         //keep track if try/catch fails
         bool trySuccess = false;
 
         switch (upperIndex != 2) {
             //case true if on second page of chapters
             case true:
-                //assuming that if user is on second page of chapters index 3 will always be in bounds
+                //if user is on second page of chapters index 3 will always be in bounds
                 //update top title text
                 chapter1Title.text = chapterTitles[3];
                 GameObject.Find("Chapter1").GetComponent<Button>().interactable = true;
@@ -307,19 +317,27 @@ public class TextManager : MonoBehaviour {
                 }
                 break;
         }
+        #endregion
 
-        //fade UI back in
+        #region FadeIn
         while (elapsedTime < time) {
             //fade each text element from list back in from the given color value to an alpha of 1
             foreach (TextMeshProUGUI elem in tTFI) {
-                elem.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,1,(elapsedTime / time)));
+                elem.color = new Color(color.r,color.g,color.b,Mathf.Lerp(color.a,1,elapsedTime / time));
             }
             //fade each sprite element from list back in from the hard coded value to an alpha of 1
             foreach (Image elem in iTFI) {
-                elem.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,1,(elapsedTime / time)));
+                elem.color = new Color(0.3176471f,0.3176471f,0.3176471f,Mathf.Lerp(color.a,1,elapsedTime / time));
             }
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        foreach (TextMeshProUGUI elem in tTFI) {
+            elem.color = new Color(color.r,color.g,color.b,1);
+        }
+        foreach (Image elem in iTFI) {
+            elem.color = new Color(0.3176471f,0.3176471f,0.3176471f,1);
+        }
+        #endregion
     }
 }
